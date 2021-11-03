@@ -7,7 +7,7 @@ $h2Font: 36px;
     color: #F0F0F0;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     a{
         text-decoration: none;
     }
@@ -229,7 +229,7 @@ $h2Font: 36px;
         .lets-work{
             display: flex;
             justify-content: space-between;
-            margin: 10rem auto;
+            margin: 5rem auto;
 
             @keyframes dera {
                 from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
@@ -497,6 +497,9 @@ $h2Font: 36px;
 }
 
 @media all and (min-width: 320px) and (max-width: 480px){
+    *{
+        overflow-x: hidden;
+    }
     .landing-page{
         background: #000;
         nav{
@@ -1018,6 +1021,9 @@ $h2Font: 36px;
 }
 
 @media all and (min-width: 481px) and (max-width: 768px){
+    *{
+        overflow-x: hidden;
+    }
     .landing-page{
         background: #000;
         nav{
