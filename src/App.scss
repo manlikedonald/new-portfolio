@@ -1,0 +1,2056 @@
+$h1Font: 64px;
+$h2Font: 36px;
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #F0F0F0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    a{
+        text-decoration: none;
+    }
+    p{
+        font-size: 18px;
+    }
+    hr{
+        width: 2rem;
+        border: 3px solid #353636;
+        margin: .5rem 0px;
+    }
+    button{
+        width: 163px;
+        height: 55px;
+        border-radius: 10px;
+        padding: 0 1rem 0 1rem;
+    }
+    figcaption{
+        font-size: 12px;
+    }
+}
+
+.landing-page{
+    background: #000;
+    nav{
+        margin: auto 120px;
+        border: 1px solid #000;
+        background: #000;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        .nav-container{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0 1rem 0;
+            .nav-links{
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding-top: 1rem;
+                    li{
+                        margin-right: 3rem;
+                        font-size: 14px;
+                    }
+                    button{
+                        background: #6C1B92;
+                        border: 1px solid #6C1B92;
+                        font-weight: 600;
+                        position: relative;
+                        top: -1rem;
+                    }
+                }
+                
+            }
+        }
+            
+    }
+    body{
+        margin: 10rem 120px;
+        .first-page{
+            margin: auto 50px;
+
+            @keyframes don{
+                from {color: #F0F0F0;}
+                to {color: #8a1abe;}
+            }
+
+            h1{
+                font-size: $h1Font;
+                text-shadow: 23px -1px 6px #353636;
+                animation-name: don;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-fill-mode: none;
+                animation-play-state: running;    
+            }
+            h2{
+                font-size: $h2Font;
+                margin: 2rem auto;
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+            .socials{
+                display: flex;
+                div{
+                    margin-right: 1rem;
+                }
+            }
+        }
+        
+
+        .second-page{
+            margin: 10rem 50px;
+            animation-name: der;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            cursor: zoom-out;
+
+            @keyframes der {
+                from {margin-top: 40rem;}
+                to {margin-top: 10rem;}
+            }
+
+            h2{
+                font-size: $h2Font;
+                font-weight: 100;
+            }
+        }
+        .third-page{
+            .works{
+                margin: 5rem 15px;
+                p{
+                    color: #757575;
+                }
+                h2{
+                    font-size: $h2Font;
+                }
+                .urudi{
+                    display: flex;
+                    div{
+                        padding: 2rem 5rem 0 0;
+                        h2{
+                            font-size: $h2Font;
+                        }
+                        img{
+                            position: relative;
+                            top: 2px;
+                            left: 5px;
+                        }
+                    }
+                    .urudi-img{
+                        margin-right: 1.5rem;
+                    }
+                }
+                .voluum{
+                    display: flex;
+                    margin: 5rem auto;
+                    div{
+                        padding: 3rem 5rem 0 0;
+                        h2{
+                            font-size: $h2Font;
+                        }
+                        img{
+                            position: relative;
+                            top: 2px;
+                            left: 5px;
+                        }
+                    }
+                    .voluum-img{
+                        margin-right: 1.5rem;
+                    }
+                }
+                .engage{
+                    display: flex;
+                    margin: 5rem auto;
+                    div{
+                        padding: 2.5rem 5rem 0 0;
+                        h2{
+                            font-size: $h2Font;
+                        }
+                        img{
+                            position: relative;
+                            top: 2px;
+                            left: 5px;
+                        }
+                    }
+                    .engage-img{
+                        margin-right: 1.5rem;
+                    }
+                }
+                .dev{
+                    margin: 5rem auto;
+                    display: flex;
+                    .urudi-dev{
+                        width: 33.33%;
+                        h2, p{
+                            padding: 0 5rem 0 0;
+                        }
+                        img{
+                            position: relative;
+                            top: 3px;
+                            left: 5px;
+                        }
+                    }
+                    .coincrow{
+                        width: 33.33%;
+                        h2, p{
+                            padding: 0 5rem 0 0;
+                        }
+                        img{
+                            position: relative;
+                            top: 3px;
+                            left: 5px;
+                        }
+                    }
+                    .swipe{
+                        width: 33.33%;
+                        h2, p{
+                            padding: 0 5rem 0 0;
+                        }
+                        img{
+                            position: relative;
+                            top: 3px;
+                            left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .lets-work{
+            display: flex;
+            justify-content: space-between;
+            margin: 10rem auto;
+
+            @keyframes dera {
+                from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                    -webkit-background-clip: text;
+                    background-clip: min($numbers: 1);
+                    -webkit-text-fill-color: transparent;
+                }
+                to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
+                    -webkit-background-clip: text;
+                    background-clip: min($numbers: 1);
+                    -webkit-text-fill-color: transparent;    
+                ;}
+            }
+
+            h1{
+                font-size: $h1Font;
+                background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                -webkit-background-clip: text;
+                background-clip: min($numbers: 1);
+                -webkit-text-fill-color: transparent;
+                animation-name: dera;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
+            .buttons{
+                position: relative;
+                top: 1rem;
+                .email{
+                    margin: auto 1rem;
+                    background: #6C1B92;
+                    border: 1px solid #6C1B92;
+                    font-weight: 600;
+                }
+                .resume{
+                    border: 1px solid #353636;
+                    background: #000;
+                }
+            }
+        }
+    }
+    footer{
+        margin: auto 120px;
+        .content{ 
+            display: flex;
+            justify-content: space-between;
+            .donald{
+                p{
+                    margin: 1rem auto;
+                }
+                span{
+                    color: #8a1abe;
+                }
+            }
+            .socials{
+                position: relative;
+                top: 1rem;
+                img{
+                    margin-right: 3rem;
+                }
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+.urudi-page, .voluum-page{
+    background: #000;
+    padding: 0 0 3rem 0;
+    nav{
+        padding: 0 120px 0 120px;
+        border: 1px solid #000;
+        background: #000;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        .nav-container{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0 1rem 0;
+            .nav-links{
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding-top: 1rem;
+                    li{
+                        margin-right: 3rem;
+                        font-size: 14px;
+                    }
+                    button{
+                        background: #6C1B92;
+                        border: 1px solid #6C1B92;
+                        font-weight: 600;
+                        position: relative;
+                        top: -1rem;
+                    }
+                }
+                
+            }
+        }
+            
+    }
+    body{
+        margin: auto 120px;
+        .content{
+            font-size: 24px;
+            p{
+                font-size: 24px;
+            }
+        }
+        .arrow{
+            position: relative;
+            top: 3px;
+        }
+        .case-study{
+            margin-top: 4rem;
+            padding: 2rem 0 2rem 0;
+            display: flex;
+            justify-content: space-evenly;
+            background: url('./assets/double-bubble-dark.png');
+            .arrow{
+                margin-left: .5rem;
+            }
+        }
+        .heading{
+            border-radius: 10px;
+            padding: 2rem 5rem 4rem 5rem;
+            background: url('./assets/double-bubble-dark.png');
+            // height: 10rem;
+            hr{
+                width: 100%;
+            }
+            p{
+                float: right;
+                font-weight: 600;
+                color: #B1ADB2;
+            }
+        }
+        .define{
+            padding: 4rem 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            .text{
+                padding: 0 5rem 0 0;
+            }
+            .design-process{
+                width: 40%;
+                text-align: right;
+                .head{
+                    font-size: 18px;
+                }
+                .numbers{
+                    background: #1C1C1C;
+                    padding: 0 3rem 0 1rem;
+                }
+                p{
+                    font-weight: 600;
+                    font-size: 35px;
+                    margin-bottom: 1rem;
+                }
+                hr{
+                    float: right;
+                    position: relative;
+                    top: -1rem;                    
+                }
+            }
+        }
+        .ideate, .prototype{
+            padding: 4rem 0 4rem 0;
+        }
+        .prototype{
+            .image{
+                background: url('./assets/double-bubble-dark.png');
+                padding: 3rem 0rem 3rem 0rem;
+                justify-content: center;
+                display: flex;
+                height: auto;
+                img{
+                    width: 500px;
+                }
+                figcaption{
+                    font-size: 14px;
+                }
+            }
+            .images{
+                background: #000;
+                padding: 3rem 0rem 3rem 0rem;
+                justify-content: center;
+                display: flex;
+                .others{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .critic-div{
+                display: flex;
+                justify-content: center;
+                padding: 4rem 0 4rem 0;
+                img{
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        .test{
+            .images{
+                justify-content: center;
+                display: flex;
+                span{
+                    padding: 0 2rem 0 0;
+                }
+            }
+            .content{
+                padding: 4rem 0 4rem 0;
+            }
+            .video{
+                display: flex;
+                justify-content: center;
+                video{
+                    // margin-top: 15rem;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+        }
+
+        .site{
+            // text-align: center;
+            padding: 2rem 0 0 0 ;
+        }
+    }
+    footer{
+        margin: auto 120px;
+        padding-top: 5rem;
+        .content{ 
+            display: flex;
+            justify-content: space-between;
+            .donald{
+                p{
+                    margin: 1rem auto;
+                }
+                span{
+                    color: #8a1abe;
+                }
+            }
+            .socials{
+                position: relative;
+                top: 1rem;
+                img{
+                    margin-right: 3rem;
+                }
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    .landing-page{
+        background: #000;
+        nav{
+            margin: auto 20px;
+            border: 1px solid #000;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                .nav-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        padding-top: 1rem;
+                        li{
+                            margin-right: 3rem;
+                            font-size: 14px;
+                            display: none;
+                        }
+                        button{
+                            background: #6C1B92;
+                            border: 1px solid #6C1B92;
+                            font-weight: 600;
+                            position: relative;
+                            top: -1rem;
+                            display: none;
+                        }
+                    }
+                    
+                }
+            }
+                
+        }
+        body{
+            margin: 5rem 20px;
+            .first-page{
+                margin: auto auto;
+    
+                @keyframes don{
+                    from {color: #F0F0F0;}
+                    to {color: #8a1abe;}
+                }
+    
+                h1{
+                    font-size: 36px;
+                    text-shadow: 23px -1px 6px #353636;
+                    animation-name: don;
+                    animation-duration: 2s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;    
+                }
+                h2{
+                    font-size: 24px;
+                    margin: 2rem auto;
+                }
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 16px;
+                }
+                .socials{
+                    display: flex;
+                    div{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            
+    
+            .second-page{
+                margin: 5rem auto;
+                animation-name: der;
+                animation-duration: 2.5s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                cursor: zoom-out;
+    
+                @keyframes der {
+                    from {margin-top: 40rem;}
+                    to {margin-top: 5rem;}
+                }
+                p{
+                    font-size: 16px;
+                }
+    
+                h2{
+                    font-size: 24px;
+                    font-weight: 100;
+                }
+            }
+            .third-page{
+                p{
+                    font-size: 16px;
+                }
+                .works{
+                    margin: 0rem 0px;
+                    .arrow{
+                        position: relative;
+                        top: 3px;
+                    }
+                    p{
+                        color: #5f5f5f;
+                    }
+                    h2{
+                        font-size: 24px;
+                    }
+                    .urudi{
+                        display: flex;
+                        flex-direction: column;
+                        div{
+                            padding: 2rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .urudi-img{
+                            margin-right: 0rem;
+                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                        }
+                    }
+                    .voluum{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem auto;
+                        div{
+                            padding: 3rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .voluum-img{
+                            margin-right: 0rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .engage{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem auto;
+                        div{
+                            padding: 2.5rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .engage-img{
+                            margin-right: 0rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .dev{
+                        margin: 2rem auto;
+                        display: flex;
+                        flex-direction: column;
+                        .urudi-dev{
+                            width: auto;
+                            padding-bottom: 2rem;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                        .coincrow{
+                            width: auto;
+                            padding-bottom: 2rem;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                        .swipe{
+                            width: auto;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .lets-work{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 1rem auto;
+                padding: 1rem 0 1rem 00;
+    
+                @keyframes dera {
+                    from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                        -webkit-background-clip: text;
+                        background-clip: min($numbers: 1);
+                        -webkit-text-fill-color: transparent;
+                    }
+                    to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
+                        -webkit-background-clip: text;
+                        background-clip: min($numbers: 1);
+                        -webkit-text-fill-color: transparent;    
+                    ;}
+                }
+    
+                h1{
+                    font-size: 36px;
+                    background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                    -webkit-background-clip: text;
+                    background-clip: min($numbers: 1);
+                    -webkit-text-fill-color: transparent;
+                    animation-name: dera;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                }
+                .buttons{
+                    position: relative;
+                    top: 1rem;
+                    display: flex;
+                    .email{
+                        margin: auto .5rem;
+                        background: #6C1B92;
+                        border: 1px solid #6C1B92;
+                        font-weight: 600;
+                    }
+                    .resume{
+                        border: 1px solid #353636;
+                        background: #000;
+                    }
+                }
+            }
+        }
+        footer{
+            margin: auto 20px;
+            .content{ 
+                display: flex;
+                justify-content: space-between;
+                .donald{
+                    p{
+                        margin: 1rem auto;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #8a1abe;
+                    }
+                }
+                .socials{
+                    position: relative;
+                    top: -2rem;
+                    left: 2rem;
+                    display: flex;
+                    img{
+                        margin-right: 3rem;
+                        width: 70px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    
+    .urudi-page, .voluum-page{
+        background: #000;
+        padding: 0 0 3rem 0;
+        nav{
+            padding: 0 20px 0 20px;
+            border: 1px solid #000;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                .nav-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        padding-top: 1rem;
+                        li{
+                            margin-right: 3rem;
+                            font-size: 14px;
+                            display: none;
+                        }
+                        button{
+                            background: #6C1B92;
+                            border: 1px solid #6C1B92;
+                            font-weight: 600;
+                            position: relative;
+                            top: -1rem;
+                            display: none;
+                        }
+                    }
+                    
+                }
+            }
+                
+        }
+        body{
+            margin: auto 20px;
+            .content{
+                font-size: 24px;
+                p{
+                    font-size: 24px;
+                }
+            }
+            .arrow{
+                position: relative;
+                top: 3px;
+            }
+            .case-study{
+                margin-top: 4rem;
+                padding: 2rem 0 2rem 0;
+                display: flex;
+                justify-content: space-evenly;
+                background: url('./assets/double-bubble-dark.png');
+                .arrow{
+                    margin-left: .5rem;
+                }
+            }
+            .heading{
+                border-radius: 10px;
+                padding: 2rem 1rem 4rem 1rem;
+                background: url('./assets/double-bubble-dark.png');
+                // height: 10rem;
+                hr{
+                    width: 100%;
+                }
+                p{
+                    float: right;
+                    font-weight: 600;
+                    color: #B1ADB2;
+                }
+            }
+            .define{
+                padding: 4rem 0 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 0 1rem 0 0;
+                }
+                .design-process{
+                    width: 40%;
+                    text-align: right;
+                    display: none;
+                    .head{
+                        font-size: 16px;
+                    }
+                    .numbers{
+                        background: #1C1C1C;
+                        padding: 0 0rem 0 .5rem;
+                    }
+                    p{
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-bottom: 1rem;
+                    }
+                    hr{
+                        float: right;
+                        position: relative;
+                        top: -1rem;                    
+                    }
+                }
+            }
+            .ideate, .prototype{
+                padding: 6rem 0 2rem 0;
+            }
+            .prototype{
+                .image{
+                    background: url('./assets/double-bubble-dark.png');
+                    padding: 3rem 0rem 3rem 0rem;
+                    justify-content: center;
+                    display: flex;
+                    height: auto;
+                    img{
+                        width: 300px;
+                    }
+                    figcaption{
+                        font-size: 14px;
+                    }
+                }
+                .images{
+                    background: #000;
+                    padding: 3rem 0rem 3rem 0rem;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    .others{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                .critic-div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 4rem 0 4rem 0;
+                    img{
+                        margin-right: 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .test{
+                .images{
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        padding: 0 2rem 0 0;
+                    }
+                    .exhibita, .exhibitb{
+                        width: 100%;
+                        margin-bottom: .5rem;
+                    }
+                }
+                .content{
+                    padding: 4rem 0 4rem 0;
+                }
+                .video{
+                    display: flex;
+                    justify-content: center;
+                    video{
+                        // margin-top: 15rem;
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+            }
+    
+            .site{
+                // text-align: center;
+                padding: 2rem 0 0 0 ;
+            }
+        }
+        footer{
+            margin: auto 20px;
+            .content{ 
+                display: flex;
+                justify-content: space-between;
+                .donald{
+                    p{
+                        margin: 1rem auto;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #8a1abe;
+                    }
+                }
+                .socials{
+                    position: relative;
+                    top: -2rem;
+                    left: 2rem;
+                    display: flex;
+                    img{
+                        margin-right: 3rem;
+                        width: 70px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .landing-page{
+        background: #000;
+        nav{
+            margin: auto 50px;
+            border: 1px solid #000;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                .nav-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        padding-top: 1rem;
+                        li{
+                            margin-right: 3rem;
+                            font-size: 14px;
+                        }
+                        button{
+                            background: #6C1B92;
+                            border: 1px solid #6C1B92;
+                            font-weight: 600;
+                            position: relative;
+                            top: -1rem;
+                        }
+                    }
+                    
+                }
+            }
+                
+        }
+        body{
+            margin: 5rem 50px;
+            .first-page{
+                margin: auto auto;
+    
+                @keyframes don{
+                    from {color: #F0F0F0;}
+                    to {color: #8a1abe;}
+                }
+    
+                h1{
+                    font-size: 48px;
+                    text-shadow: 23px -1px 6px #353636;
+                    animation-name: don;
+                    animation-duration: 2s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;    
+                }
+                h2{
+                    font-size: 24px;
+                    margin: 2rem auto;
+                }
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 16px;
+                }
+                .socials{
+                    display: flex;
+                    div{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            
+    
+            .second-page{
+                margin: 5rem auto;
+                animation-name: der;
+                animation-duration: 2.5s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                cursor: zoom-out;
+    
+                @keyframes der {
+                    from {margin-top: 40rem;}
+                    to {margin-top: 5rem;}
+                }
+                p{
+                    font-size: 16px;
+                }
+    
+                h2{
+                    font-size: 24px;
+                    font-weight: 100;
+                }
+            }
+            .third-page{
+                p{
+                    font-size: 16px;
+                }
+                .works{
+                    margin: 0rem 0px;
+                    .arrow{
+                        position: relative;
+                        top: 3px;
+                    }
+                    p{
+                        color: #757575;;
+                    }
+                    h2{
+                        font-size: 24px;
+                    }
+                    .urudi{
+                        display: flex;
+                        flex-direction: column;
+                        div{
+                            padding: 2rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .urudi-img{
+                            margin-right: 0rem;
+                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                        }
+                    }
+                    .voluum{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem auto;
+                        div{
+                            padding: 3rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .voluum-img{
+                            margin-right: 0rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .engage{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem auto;
+                        div{
+                            padding: 2.5rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .engage-img{
+                            margin-right: 0rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .dev{
+                        margin: 2rem auto;
+                        display: flex;
+                        flex-direction: column;
+                        .urudi-dev{
+                            width: auto;
+                            padding-bottom: 2rem;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                        .coincrow{
+                            width: auto;
+                            padding-bottom: 2rem;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                        .swipe{
+                            width: auto;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .lets-work{
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                margin: 1rem auto;
+                padding: 1rem 0 1rem 00;
+    
+                @keyframes dera {
+                    from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                        -webkit-background-clip: text;
+                        background-clip: min($numbers: 1);
+                        -webkit-text-fill-color: transparent;
+                    }
+                    to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
+                        -webkit-background-clip: text;
+                        background-clip: min($numbers: 1);
+                        -webkit-text-fill-color: transparent;    
+                    ;}
+                }
+    
+                h1{
+                    font-size: 36px;
+                    background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                    -webkit-background-clip: text;
+                    background-clip: min($numbers: 1);
+                    -webkit-text-fill-color: transparent;
+                    animation-name: dera;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                }
+                .buttons{
+                    position: relative;
+                    top: 1rem;
+                    display: flex;
+                    .email{
+                        margin: .1rem .5rem;
+                        background: #6C1B92;
+                        border: 1px solid #6C1B92;
+                        font-weight: 600;
+                    }
+                    .resume{
+                        border: 1px solid #353636;
+                        background: #000;
+                    }
+                }
+            }
+        }
+        footer{
+            margin: auto 20px;
+            .content{ 
+                display: flex;
+                justify-content: space-between;
+                .donald{
+                    p{
+                        margin: 1rem auto;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #8a1abe;
+                    }
+                }
+                .socials{
+                    position: relative;
+                    top: -2rem;
+                    left: 2rem;
+                    display: flex;
+                    img{
+                        margin-right: 3rem;
+                        // width: 70px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    
+    .urudi-page, .voluum-page{
+        background: #000;
+        padding: 0 0 3rem 0;
+        nav{
+            padding: 0 50px 0 50px;
+            border: 1px solid #000;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                .nav-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        padding-top: 1rem;
+                        li{
+                            margin-right: 3rem;
+                            font-size: 14px;
+                            // display: none;
+                        }
+                        button{
+                            background: #6C1B92;
+                            border: 1px solid #6C1B92;
+                            font-weight: 600;
+                            position: relative;
+                            top: -1rem;
+                            // display: none;
+                        }
+                    }
+                    
+                }
+            }
+                
+        }
+        body{
+            margin: auto 50px;
+            .content{
+                font-size: 24px;
+                p{
+                    font-size: 24px;
+                }
+            }
+            .arrow{
+                position: relative;
+                top: 3px;
+            }
+            .case-study{
+                margin-top: 4rem;
+                padding: 2rem 0 2rem 0;
+                display: flex;
+                justify-content: space-evenly;
+                background: url('./assets/double-bubble-dark.png');
+                .arrow{
+                    margin-left: .5rem;
+                }
+            }
+            .heading{
+                border-radius: 10px;
+                padding: 2rem 1rem 4rem 1rem;
+                background: url('./assets/double-bubble-dark.png');
+                // height: 10rem;
+                hr{
+                    width: 100%;
+                }
+                p{
+                    float: right;
+                    font-weight: 600;
+                    color: #B1ADB2;
+                }
+            }
+            .define{
+                padding: 4rem 0 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 0 1rem 0 0;
+                }
+                .design-process{
+                    width: 40%;
+                    text-align: right;
+                    display: none;
+                    .head{
+                        font-size: 16px;
+                    }
+                    .numbers{
+                        background: #1C1C1C;
+                        padding: 0 0rem 0 .5rem;
+                    }
+                    p{
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-bottom: 1rem;
+                    }
+                    hr{
+                        float: right;
+                        position: relative;
+                        top: -1rem;                    
+                    }
+                }
+            }
+            .ideate, .prototype{
+                padding: 6rem 0 2rem 0;
+            }
+            .prototype{
+                .image{
+                    background: url('./assets/double-bubble-dark.png');
+                    padding: 3rem 0rem 3rem 0rem;
+                    justify-content: center;
+                    display: flex;
+                    height: auto;
+                    img{
+                        width: 300px;
+                    }
+                    figcaption{
+                        font-size: 14px;
+                    }
+                }
+                .images{
+                    background: #000;
+                    padding: 3rem 0rem 3rem 0rem;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    .others{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                .critic-div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 4rem 0 4rem 0;
+                    img{
+                        margin-right: 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .test{
+                .images{
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        padding: 0 2rem 0 0;
+                    }
+                    .exhibita, .exhibitb{
+                        width: 100%;
+                        margin-bottom: .5rem;
+                    }
+                }
+                .content{
+                    padding: 4rem 0 4rem 0;
+                }
+                .video{
+                    display: flex;
+                    justify-content: center;
+                    video{
+                        // margin-top: 15rem;
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+            }
+    
+            .site{
+                // text-align: center;
+                padding: 2rem 0 0 0 ;
+            }
+        }
+        footer{
+            margin: auto 20px;
+            .content{ 
+                display: flex;
+                justify-content: space-between;
+                .donald{
+                    p{
+                        margin: 1rem auto;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #8a1abe;
+                    }
+                }
+                .socials{
+                    position: relative;
+                    top: -2rem;
+                    left: 2rem;
+                    display: flex;
+                    img{
+                        margin-right: 3rem;
+                        // width: 70px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .landing-page{
+        background: #000;
+        nav{
+            margin: auto 100px;
+            border: 1px solid #000;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                .nav-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        padding-top: 1rem;
+                        li{
+                            margin-right: 3rem;
+                            font-size: 14px;
+                        }
+                        button{
+                            background: #6C1B92;
+                            border: 1px solid #6C1B92;
+                            font-weight: 600;
+                            position: relative;
+                            top: -1rem;
+                        }
+                    }
+                    
+                }
+            }
+                
+        }
+        body{
+            margin: 5rem 100px;
+            .first-page{
+                margin: auto auto;
+    
+                @keyframes don{
+                    from {color: #F0F0F0;}
+                    to {color: #8a1abe;}
+                }
+    
+                h1{
+                    font-size: 64px;
+                    text-shadow: 23px -1px 6px #353636;
+                    animation-name: don;
+                    animation-duration: 2s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;    
+                }
+                h2{
+                    font-size: 36px;
+                    margin: 2rem auto;
+                }
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 16px;
+                }
+                .socials{
+                    display: flex;
+                    div{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            
+    
+            .second-page{
+                margin: 5rem auto;
+                animation-name: der;
+                animation-duration: 2.5s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                cursor: zoom-out;
+    
+                @keyframes der {
+                    from {margin-top: 40rem;}
+                    to {margin-top: 5rem;}
+                }
+                p{
+                    font-size: 18px;
+                }
+    
+                h2{
+                    font-size: 36px;
+                    font-weight: 100;
+                }
+            }
+            .third-page{
+                p{
+                    font-size: 16px;
+                }
+                .works{
+                    margin: 0rem 0px;
+                    .arrow{
+                        position: relative;
+                        top: 3px;
+                    }
+                    p{
+                        color: #757575;;
+                    }
+                    h2{
+                        font-size: 24px;
+                    }
+                    .urudi{
+                        display: flex;
+                        flex-direction: column;
+                        div{
+                            padding: 2rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .urudi-img{
+                            margin-right: 0rem;
+                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                        }
+                    }
+                    .voluum{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem auto;
+                        div{
+                            padding: 3rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .voluum-img{
+                            margin-right: 0rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .engage{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem auto;
+                        div{
+                            padding: 2.5rem 0rem 0 0;
+                            h2{
+                                font-size: $h2Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .engage-img{
+                            margin-right: 0rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .dev{
+                        margin: 2rem auto;
+                        display: flex;
+                        flex-direction: column;
+                        .urudi-dev{
+                            width: auto;
+                            padding-bottom: 2rem;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                        .coincrow{
+                            width: auto;
+                            padding-bottom: 2rem;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                        .swipe{
+                            width: auto;
+                            h2, p{
+                                padding: 0 0rem 0 0;
+                            }
+                            img{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .lets-work{
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                margin: 1rem auto;
+                padding: 2rem 0 1rem 00;
+    
+                @keyframes dera {
+                    from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                        -webkit-background-clip: text;
+                        background-clip: min($numbers: 1);
+                        -webkit-text-fill-color: transparent;
+                    }
+                    to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
+                        -webkit-background-clip: text;
+                        background-clip: min($numbers: 1);
+                        -webkit-text-fill-color: transparent;    
+                    ;}
+                }
+    
+                h1{
+                    font-size: 36px;
+                    background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
+                    -webkit-background-clip: text;
+                    background-clip: min($numbers: 1);
+                    -webkit-text-fill-color: transparent;
+                    animation-name: dera;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                }
+                .buttons{
+                    position: relative;
+                    top: 0rem;
+                    display: flex;
+                    .email{
+                        margin: .1rem .5rem;
+                        background: #6C1B92;
+                        border: 1px solid #6C1B92;
+                        font-weight: 600;
+                    }
+                    .resume{
+                        border: 1px solid #353636;
+                        background: #000;
+                    }
+                }
+            }
+        }
+        footer{
+            margin: auto 20px;
+            .content{ 
+                display: flex;
+                justify-content: space-between;
+                .donald{
+                    p{
+                        margin: 1rem auto;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #8a1abe;
+                    }
+                }
+                .socials{
+                    position: relative;
+                    top: -2rem;
+                    left: 2rem;
+                    display: flex;
+                    img{
+                        margin-right: 3rem;
+                        // width: 70px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    
+    .urudi-page, .voluum-page{
+        background: #000;
+        padding: 0 0 3rem 0;
+        nav{
+            padding: 0 50px 0 50px;
+            border: 1px solid #000;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                .nav-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        padding-top: 1rem;
+                        li{
+                            margin-right: 3rem;
+                            font-size: 14px;
+                            // display: none;
+                        }
+                        button{
+                            background: #6C1B92;
+                            border: 1px solid #6C1B92;
+                            font-weight: 600;
+                            position: relative;
+                            top: -1rem;
+                            // display: none;
+                        }
+                    }
+                    
+                }
+            }
+                
+        }
+        body{
+            margin: auto 50px;
+            .content{
+                font-size: 24px;
+                p{
+                    font-size: 24px;
+                }
+            }
+            .arrow{
+                position: relative;
+                top: 3px;
+            }
+            .case-study{
+                margin-top: 4rem;
+                padding: 2rem 0 2rem 0;
+                display: flex;
+                justify-content: space-evenly;
+                background: url('./assets/double-bubble-dark.png');
+                .arrow{
+                    margin-left: .5rem;
+                }
+            }
+            .heading{
+                border-radius: 10px;
+                padding: 2rem 1rem 4rem 1rem;
+                background: url('./assets/double-bubble-dark.png');
+                // height: 10rem;
+                hr{
+                    width: 100%;
+                }
+                p{
+                    float: right;
+                    font-weight: 600;
+                    color: #B1ADB2;
+                }
+            }
+            .define{
+                padding: 4rem 0 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 0 1rem 0 0;
+                }
+                .design-process{
+                    width: 40%;
+                    text-align: right;
+                    display: none;
+                    .head{
+                        font-size: 16px;
+                    }
+                    .numbers{
+                        background: #1C1C1C;
+                        padding: 0 0rem 0 .5rem;
+                    }
+                    p{
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-bottom: 1rem;
+                    }
+                    hr{
+                        float: right;
+                        position: relative;
+                        top: -1rem;                    
+                    }
+                }
+            }
+            .ideate, .prototype{
+                padding: 6rem 0 2rem 0;
+            }
+            .prototype{
+                .image{
+                    background: url('./assets/double-bubble-dark.png');
+                    padding: 3rem 0rem 3rem 0rem;
+                    justify-content: center;
+                    display: flex;
+                    height: auto;
+                    img{
+                        width: 300px;
+                    }
+                    figcaption{
+                        font-size: 14px;
+                    }
+                }
+                .images{
+                    background: #000;
+                    padding: 3rem 0rem 3rem 0rem;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    .others{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                .critic-div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 4rem 0 4rem 0;
+                    img{
+                        margin-right: 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .test{
+                .images{
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        padding: 0 2rem 0 0;
+                    }
+                    .exhibita, .exhibitb{
+                        width: 100%;
+                        margin-bottom: .5rem;
+                    }
+                }
+                .content{
+                    padding: 4rem 0 4rem 0;
+                }
+                .video{
+                    display: flex;
+                    justify-content: center;
+                    video{
+                        // margin-top: 15rem;
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+            }
+    
+            .site{
+                // text-align: center;
+                padding: 2rem 0 0 0 ;
+            }
+        }
+        footer{
+            margin: auto 20px;
+            .content{ 
+                display: flex;
+                justify-content: space-between;
+                .donald{
+                    p{
+                        margin: 1rem auto;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #8a1abe;
+                    }
+                }
+                .socials{
+                    position: relative;
+                    top: -2rem;
+                    left: 2rem;
+                    display: flex;
+                    img{
+                        margin-right: 3rem;
+                        // width: 70px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
