@@ -22,7 +22,11 @@ function LandingPage() {
             <nav id='home'>
                 <div className="nav-container">
                     <div className="logo-div">
-                        <img src={logo} alt="donald logo" />
+                        <Link
+                            to='/'
+                        >
+                            <img src={logo} alt="donald logo" />
+                        </Link>
                     </div>
 
                     <div className="nav-links">
@@ -154,7 +158,7 @@ function LandingPage() {
 
                             <img src={urudi} alt="urudi" className='urudi-img'/>
                             
-                            <img src={urudii} alt="urudi" />
+                            <img src={urudii} alt="urudi" className='second-image' />
                         </div>
 
                         <div className="voluum">
@@ -182,7 +186,7 @@ function LandingPage() {
 
                             <img src={voluum} alt="voluum" className='voluum-img'/>
                             
-                            <img src={voluumm} alt="voluum" />
+                            <img src={voluumm} alt="voluum" className='second-image'/>
                         </div>
 
                         <div className="engage">
@@ -210,7 +214,7 @@ function LandingPage() {
 
                             <img src={engage} alt="voluum" className='engage-img'/>
                             
-                            <img src={engagee} alt="voluum" />
+                            <img src={engagee} alt="voluum" className='second-image'/>
                         </div>
 
                         <h2>I also build React applications when I’m less busy.</h2>
@@ -228,10 +232,14 @@ function LandingPage() {
                                     I built the frontend of the website (PC and mobile view). Thankfully, I designed the product, so it was easy to build.
                                 </p>
                                 <br />
-                                <p>
+                                <a
+                                    href='https://www.urudii.com'
+                                    target= '_blank'
+                                    rel= 'noreferrer'
+                                >
                                     <b>urudi</b>
                                     <Arrow className='arrow' />
-                                </p>
+                                </a>
                             </div>
 
                             <div className="coincrow">
@@ -246,10 +254,14 @@ function LandingPage() {
                                     CoinCrow is a clone of CoinGecko as at June 2021.  It incorporates the consumption of RESTful APIs to give live updates on all crypto data (prices, market cap and charts).
                                 </p>
                                 <br />
-                                <p>
+                                <a
+                                    href='https://coincrow.netlify.app'
+                                    target= '_blank'
+                                    rel= 'noreferrer'
+                                >
                                     <b>coincrow</b>
                                     <Arrow className='arrow' />
-                                </p>
+                                </a>
                             </div>
 
                             <div className="swipe">
@@ -264,10 +276,14 @@ function LandingPage() {
                                     Swipe is a clone of the old Float website. The site composes of series of CSS animation and JSX markup.
                                 </p>
                                 <br />
-                                <p>
+                                <a
+                                    href='https://floatclone.netlify.app/'
+                                    target= '_blank'
+                                    rel= 'noreferrer'
+                                >
                                     <b>swipe</b>
                                     <Arrow className='arrow' />
-                                </p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -276,13 +292,22 @@ function LandingPage() {
                 <section className='lets-work'>
                     <h1>Let’s work together</h1>
                     <div className="buttons">
-                        <button className='email'>
-                            hi@odera.pro
-                        </button>
-
-                        <button className='resume'>
-                            Resumé 🖨
-                        </button>
+                        <a href="mailto:ugobudedonald@gmail.com">
+                            <button className='email'>
+                                hi@odera.pro
+                            </button>
+                        </a>
+                        
+                        <a 
+                            href="https://docs.google.com/document/d/1TwgjNm-WCvZ6k208DSMvqRoBWBNJ0-lNvxicA2UUq_k/edit?usp=sharing"
+                            target='_blank'    
+                            rel='noreferrer'
+                        >
+                            <button className='resume'>
+                                Resumé 🖨
+                            </button>    
+                        </a>
+                        
                     </div>
                 </section>
             </body>
@@ -301,9 +326,32 @@ function LandingPage() {
                     <div></div>
 
                     <div className="socials">
-                        <img src={linkedin} alt="LinkedIn" />
-                        <img src={twitter} alt="twitter" />
-                        <img src={medium} alt="Medium" />
+                        <a 
+                            href="https://www.linkedin.com/in/donald-ugobude/"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+
+                        </a>
+                            <img src={linkedin} alt="LinkedIn" />
+                        <a 
+                            href="https://www.twitter.com/0d3ra"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={twitter} alt="twitter" />
+                        </a>
+
+                        <a 
+                            href="https://medium.com/@odera"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={medium} alt="Medium" />    
+                        </a>
+                       
+                        
+                        
                     </div>
 
                     <div></div>

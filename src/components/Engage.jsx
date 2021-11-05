@@ -249,14 +249,14 @@ function Urudi() {
                 </div>
 
                 <div className="case-study">
-                    <p>View other case studies:</p>
+                    <p className='middle'>View other case studies:</p>
 
                     <Link
                         to= '/urudi'
                     >
                         <p>
                             <b>Urudi</b>
-                            <img src={arrow} alt="arrow" className='arrow' />
+                            {/* <img src={arrow} alt="arrow" className='arrow' /> */}
                         </p>
                     </Link>
 
@@ -265,7 +265,7 @@ function Urudi() {
                     >
                         <p>
                             <b>Voluum</b>
-                            <img src={arrow} alt="arrow" className='arrow' />
+                            {/* <img src={arrow} alt="arrow" className='arrow' /> */}
                         </p>
                     </Link>
                 </div>

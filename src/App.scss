@@ -33,7 +33,7 @@ $h2Font: 36px;
 .landing-page{
     background: #000;
     nav{
-        margin: auto 120px;
+        padding: 1rem 120px 1rem 120px;
         border: 1px solid #000;
         background: #000;
         position: sticky;
@@ -128,6 +128,10 @@ $h2Font: 36px;
         .third-page{
             .works{
                 margin: 5rem 15px;
+                .arrow{
+                    position: relative;
+                    top: 3px;
+                }
                 p{
                     color: #757575;
                 }
@@ -203,6 +207,7 @@ $h2Font: 36px;
                     }
                     .coincrow{
                         width: 33.33%;
+                        margin: auto 1rem;
                         h2, p{
                             padding: 0 5rem 0 0;
                         }
@@ -502,8 +507,9 @@ $h2Font: 36px;
     }
     .landing-page{
         background: #000;
+        padding: 0 0 1rem 0;
         nav{
-            margin: auto 20px;
+            padding: 0 20px 0rem 20px;
             border: 1px solid #000;
             background: #000;
             position: sticky;
@@ -573,8 +579,7 @@ $h2Font: 36px;
                         margin-right: 1rem;
                     }
                 }
-            }
-            
+            }       
     
             .second-page{
                 margin: 5rem auto;
@@ -607,6 +612,9 @@ $h2Font: 36px;
                 }
                 .works{
                     margin: 0rem 0px;
+                    .second-image{
+                        display: none;
+                    }
                     .arrow{
                         position: relative;
                         top: 3px;
@@ -623,7 +631,7 @@ $h2Font: 36px;
                         div{
                             padding: 2rem 0rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: 36px;
                             }
                             img{
                                 position: relative;
@@ -635,12 +643,13 @@ $h2Font: 36px;
                             margin-right: 0rem;
                             margin-bottom: 1rem;
                             margin-top: 1rem;
+                            height: 230px;
                         }
                     }
                     .voluum{
                         display: flex;
                         flex-direction: column;
-                        margin: 2rem auto;
+                        margin: auto auto;
                         div{
                             padding: 3rem 0rem 0 0;
                             h2{
@@ -656,12 +665,14 @@ $h2Font: 36px;
                             margin-right: 0rem;
                             margin-top: 1rem;
                             margin-bottom: 1rem;
+                            height: 230px;
                         }
                     }
                     .engage{
                         display: flex;
                         flex-direction: column;
-                        margin: 2rem auto;
+                        margin: auto auto;
+                        margin-bottom: 1rem;
                         div{
                             padding: 2.5rem 0rem 0 0;
                             h2{
@@ -677,6 +688,7 @@ $h2Font: 36px;
                             margin-right: 0rem;
                             margin-top: 1rem;
                             margin-bottom: 1rem;
+                            height: 230px;
                         }
                     }
                     .dev{
@@ -686,6 +698,9 @@ $h2Font: 36px;
                         .urudi-dev{
                             width: auto;
                             padding-bottom: 2rem;
+                            h2{
+                                font-size: 36px;
+                            }
                             h2, p{
                                 padding: 0 0rem 0 0;
                             }
@@ -699,6 +714,10 @@ $h2Font: 36px;
                         .coincrow{
                             width: auto;
                             padding-bottom: 2rem;
+                            margin: 2rem auto;
+                            h2{
+                                font-size: 36px;
+                            }
                             h2, p{
                                 padding: 0 0rem 0 0;
                             }
@@ -711,6 +730,9 @@ $h2Font: 36px;
                         }
                         .swipe{
                             width: auto;
+                            h2{
+                                font-size: 36px;
+                            }
                             h2, p{
                                 padding: 0 0rem 0 0;
                             }
@@ -782,8 +804,13 @@ $h2Font: 36px;
                 display: flex;
                 justify-content: space-between;
                 .donald{
+                    display: flex;
+                    padding: 0 0 1rem 0;
+                    img{
+                        width: 50px;
+                    }
                     p{
-                        margin: 1rem auto;
+                        margin: 1rem 1rem;
                         font-size: 14px;
                     }
                     span{
@@ -795,9 +822,10 @@ $h2Font: 36px;
                     top: -2rem;
                     left: 2rem;
                     display: flex;
+                    display: none;
                     img{
                         margin-right: 3rem;
-                        width: 70px;
+                        // width: 70px;
                     }
                 }
             }
@@ -809,7 +837,7 @@ $h2Font: 36px;
     
     .urudi-page, .voluum-page{
         background: #000;
-        padding: 0 0 3rem 0;
+        padding: 0 0 1rem 0;
         nav{
             padding: 0 20px 0 20px;
             border: 1px solid #000;
@@ -861,7 +889,7 @@ $h2Font: 36px;
                 margin-top: 4rem;
                 padding: 2rem 0 2rem 0;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 background: url('./assets/double-bubble-dark.png');
                 .arrow{
                     margin-left: .5rem;
@@ -869,7 +897,7 @@ $h2Font: 36px;
             }
             .heading{
                 border-radius: 10px;
-                padding: 2rem 1rem 4rem 1rem;
+                padding: 2rem 1rem 2rem 1rem;
                 background: url('./assets/double-bubble-dark.png');
                 // height: 10rem;
                 hr{
@@ -994,8 +1022,13 @@ $h2Font: 36px;
                 display: flex;
                 justify-content: space-between;
                 .donald{
+                    display: flex;
+                    padding: 0 0 1rem 0;
+                    img{
+                        width: 50px;
+                    }
                     p{
-                        margin: 1rem auto;
+                        margin: 1rem 1rem;
                         font-size: 14px;
                     }
                     span{
@@ -1007,9 +1040,10 @@ $h2Font: 36px;
                     top: -2rem;
                     left: 2rem;
                     display: flex;
+                    display: none;
                     img{
                         margin-right: 3rem;
-                        width: 70px;
+                        // width: 70px;
                     }
                 }
             }
@@ -1026,8 +1060,9 @@ $h2Font: 36px;
     }
     .landing-page{
         background: #000;
+        padding: 0 0 1rem 0;
         nav{
-            margin: auto 50px;
+            padding: 1rem 50px 1rem 50px;
             border: 1px solid #000;
             background: #000;
             position: sticky;
@@ -1133,6 +1168,9 @@ $h2Font: 36px;
                         position: relative;
                         top: 3px;
                     }
+                    .second-image{
+                        display: none;
+                    }
                     p{
                         color: #757575;;
                     }
@@ -1205,9 +1243,13 @@ $h2Font: 36px;
                         margin: 2rem auto;
                         display: flex;
                         flex-direction: column;
+                        h2{
+                            font-size: 36px;
+                        }
                         .urudi-dev{
                             width: auto;
                             padding-bottom: 2rem;
+                            
                             h2, p{
                                 padding: 0 0rem 0 0;
                             }
@@ -1221,6 +1263,7 @@ $h2Font: 36px;
                         .coincrow{
                             width: auto;
                             padding-bottom: 2rem;
+                            margin: 2rem auto;
                             h2, p{
                                 padding: 0 0rem 0 0;
                             }
@@ -1300,12 +1343,17 @@ $h2Font: 36px;
         }
         footer{
             margin: auto 20px;
+            padding: 0rem 0 1rem 0;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
+                    display: flex;
+                    img{
+                        width: 100px;
+                    }
                     p{
-                        margin: 1rem auto;
+                        margin: 3rem 1rem;
                         font-size: 14px;
                     }
                     span{
@@ -1313,13 +1361,15 @@ $h2Font: 36px;
                     }
                 }
                 .socials{
+                    
                     position: relative;
                     top: -2rem;
                     left: 2rem;
                     display: flex;
                     img{
                         margin-right: 3rem;
-                        // width: 70px;
+                        width: 70px;
+                        display: none;
                     }
                 }
             }
@@ -1546,7 +1596,7 @@ $h2Font: 36px;
     .landing-page{
         background: #000;
         nav{
-            margin: auto 100px;
+            padding: 1rem 100px 1rem 100px;
             border: 1px solid #000;
             background: #000;
             position: sticky;
@@ -1606,7 +1656,7 @@ $h2Font: 36px;
                 }
                 p{
                     margin-bottom: 2rem;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 .socials{
                     display: flex;
@@ -1644,7 +1694,7 @@ $h2Font: 36px;
             }
             .third-page{
                 p{
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 .works{
                     margin: 0rem 0px;
@@ -1652,11 +1702,14 @@ $h2Font: 36px;
                         position: relative;
                         top: 3px;
                     }
+                    .second-image{
+                        display: none;
+                    }
                     p{
                         color: #757575;;
                     }
                     h2{
-                        font-size: 24px;
+                        font-size: 36px;
                     }
                     .urudi{
                         display: flex;
@@ -1823,8 +1876,9 @@ $h2Font: 36px;
                 display: flex;
                 justify-content: space-between;
                 .donald{
+                    display: flex;
                     p{
-                        margin: 1rem auto;
+                        margin: 3rem 1rem;
                         font-size: 14px;
                     }
                     span{
@@ -1838,7 +1892,8 @@ $h2Font: 36px;
                     display: flex;
                     img{
                         margin-right: 3rem;
-                        // width: 70px;
+                        display: none;
+                        width: 40px;
                     }
                 }
             }
