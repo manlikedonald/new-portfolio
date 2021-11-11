@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import linkedin from '../assets/bx_bxl-linkedin.svg'
 import twitter from '../assets/ant-design_twitter-outlined.svg'
+import github from '../assets/github.svg'
 import medium from '../assets/akar-icons_medium-fill.svg'
 import urudi from '../assets/urudi.png'
 import urudii from '../assets/urudii.png'
@@ -32,14 +33,6 @@ function LandingPage() {
                     <div className="nav-links">
                         <ul>
                             <li>
-                                <a href="#works">Works</a>
-                            </li>
-
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-
-                            <li>
                                 <a href="www.medium.com/odera" target='_blank'> Blog</a>
                             </li>
 
@@ -54,12 +47,12 @@ function LandingPage() {
             </nav>
             <body>
                 <section className='first-page'>
+                    <p className='intro'>Hi, my name is</p>
                     <h1>
-                        Donald <br />
-                        Ugobude
+                        Donald Ugobude
                     </h1>
 
-                    <h2>Experienced Product Designer</h2>
+                    <h2>I design</h2>
 
                     <p>
                         A UX/UI Designer, bringing imaginations to life through design. 
@@ -69,7 +62,7 @@ function LandingPage() {
                         Figma helps enhance this communication, so we vowed never to leave each other.
                     </p>
 
-                    <div className="socials" id='about'>
+                    <div className="socials">
                         <div className="linkedin">
                             <a 
                                 href="https://www.linkedin.com/in/donald-ugobude/"
@@ -92,6 +85,17 @@ function LandingPage() {
                             
                         </div>
                         
+                        <div className="github">
+                            <a 
+                                href="https://www.github.com/manlikedonald"
+                                target='_blank'
+                                rel='noreferrer' 
+                            >
+                                <img src={github} alt="Github" />    
+                            </a>
+                            
+                        </div>
+
                         <div className="medium">
                             <a 
                                 href="https://medium.com/@odera"
@@ -107,7 +111,7 @@ function LandingPage() {
                 
                 <section className='second-page' >
                     <p>
-                        <b>ABOUT</b> 
+                        <b>About Me</b> 
                     </p>
                     <hr />
                     <h2>
@@ -121,12 +125,11 @@ function LandingPage() {
                         I think Naija Jollof is the best thing to happen to food. <br />
                         I think Messi and Wizkid are the G.O.A.Ts in their fields.
                     </h2>
-                    <h2 id='works'> </h2>
                 </section>
                 
                 <section className='third-page'>
                     <p>
-                        <b>WORKS</b>
+                        <b>Works</b>
                     </p>
 
                     <hr />
@@ -156,9 +159,22 @@ function LandingPage() {
                                 
                             </div>
 
-                            <img src={urudi} alt="urudi" className='urudi-img'/>
+                            <a 
+                                href="https://www.urudii.com"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img src={urudi} alt="urudi" className='urudi-img'/>        
+                            </a>
                             
-                            <img src={urudii} alt="urudi" className='second-image' />
+                            <a 
+                                href="https://www.urudii.com"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img src={urudii} alt="urudi" className='second-image' />    
+                            </a>
+                            
                         </div>
 
                         <div className="voluum">
@@ -184,9 +200,21 @@ function LandingPage() {
                                 </Link>
                             </div>
 
-                            <img src={voluum} alt="voluum" className='voluum-img'/>
+                            <a 
+                                href="https://www.figma.com/proto/9NIybC46KgMdfiOimZBsaJ/Voluum?page-id=0%3A1&node-id=83%3A2&viewport=241%2C48%2C0.49&scaling=min-zoom&starting-point-node-id=83%3A2"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img src={voluum} alt="voluum" className='voluum-img'/>   
+                            </a>
                             
-                            <img src={voluumm} alt="voluum" className='second-image'/>
+                            <a 
+                                href="https://www.figma.com/proto/9NIybC46KgMdfiOimZBsaJ/Voluum?page-id=0%3A1&node-id=83%3A2&viewport=241%2C48%2C0.49&scaling=min-zoom&starting-point-node-id=83%3A2"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img src={voluumm} alt="voluum" className='second-image'/>   
+                            </a>
                         </div>
 
                         <div className="engage">
@@ -212,78 +240,115 @@ function LandingPage() {
                                 </Link>
                             </div>
 
-                            <img src={engage} alt="voluum" className='engage-img'/>
+                            <a 
+                                href="https://www.figma.com/proto/6ekCXJrPgKhsuMwn7RmvsP/Engage--The-Bank-of-the-future?page-id=0%3A1&node-id=57%3A41&viewport=241%2C48%2C0.08&scaling=min-zoom&starting-point-node-id=2%3A2"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img src={engage} alt="voluum" className='engage-img'/>    
+                            </a>
+
+                            <a 
+                                href="https://www.figma.com/proto/6ekCXJrPgKhsuMwn7RmvsP/Engage--The-Bank-of-the-future?page-id=0%3A1&node-id=57%3A41&viewport=241%2C48%2C0.08&scaling=min-zoom&starting-point-node-id=2%3A2"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img src={engagee} alt="voluum" className='second-image'/>        
+                            </a> 
                             
-                            <img src={engagee} alt="voluum" className='second-image'/>
                         </div>
 
-                        <h2>I also build React applications when I’m less busy.</h2>
+                        <h2 className='react-app'>I also build React applications when I’m less busy.</h2>
 
                         <div className="dev">
                             <div className="urudi-dev">
-                                <img src={urudi} alt="urudi" />
-                                <br />
-                                <br />
-                                <h2>Urudi</h2>
-                                <br />
-                                <p>
-                                    A contract job, where I led the product team to work on problems concerning fan inclusion in profits made from musical projects.
-                                    <br />
-                                    I built the frontend of the website (PC and mobile view). Thankfully, I designed the product, so it was easy to build.
-                                </p>
-                                <br />
                                 <a
                                     href='https://www.urudii.com'
                                     target= '_blank'
                                     rel= 'noreferrer'
                                 >
-                                    <b>urudi</b>
-                                    <Arrow className='arrow' />
+                                   <img src={urudi} alt="urudi" />
                                 </a>
+                                
+                                <div>
+                                    <h2>Urudi</h2>
+                                    <br />
+                                    <p>
+                                        A contract job, where I led the product team to work on problems concerning fan inclusion in profits made from musical projects.
+                                        <br />
+                                        I built the frontend of the website (PC and mobile view). Thankfully, I designed the product, so it was easy to build.
+                                    </p>
+                                    <br />
+                                    <a
+                                        href='https://www.urudii.com'
+                                        target= '_blank'
+                                        rel= 'noreferrer'
+                                    >
+                                        <b>urudi</b>
+                                        <Arrow className='arrow' />
+                                    </a>    
+                                </div>
+                                
                             </div>
 
                             <div className="coincrow">
-                                <img src={coincrow} alt="coincrow" />
-                                <br />
-                                <br />
-                                <h2>CoinCrow</h2>
-                                <br />
-                                <p>
-                                    CoinCrow gives top cryptocurrency prices live, crypto charts, market cap, and trading volume.
-                                    <br />
-                                    CoinCrow is a clone of CoinGecko as at June 2021.  It incorporates the consumption of RESTful APIs to give live updates on all crypto data (prices, market cap and charts).
-                                </p>
-                                <br />
                                 <a
                                     href='https://coincrow.netlify.app'
                                     target= '_blank'
                                     rel= 'noreferrer'
                                 >
-                                    <b>coincrow</b>
-                                    <Arrow className='arrow' />
+                                    <img src={coincrow} alt="coincrow" />
                                 </a>
+                                
+                                <div>
+                                    <h2>CoinCrow</h2>
+                                    <br />
+                                    <p>
+                                        CoinCrow gives top cryptocurrency prices live, crypto charts, market cap, and trading volume.
+                                        <br />
+                                        CoinCrow is a clone of CoinGecko as at June 2021.  It incorporates the consumption of RESTful APIs to give live updates on all crypto data (prices, market cap and charts).
+                                    </p>
+                                    <br />
+                                    <a
+                                        href='https://coincrow.netlify.app'
+                                        target= '_blank'
+                                        rel= 'noreferrer'
+                                    >
+                                        <b>coincrow</b>
+                                        <Arrow className='arrow' />
+                                    </a>    
+                                </div>
+                                
                             </div>
 
                             <div className="swipe">
-                                <img src={swipe} alt="swipe" />
-                                <br />
-                                <br />
-                                <h2>Swipe</h2>
-                                <br />
-                                <p>
-                                    Swipe offer credit lines to SMBs to help solve cashflow problem in business.
-                                    <br />
-                                    Swipe is a clone of the old Float website. The site composes of series of CSS animation and JSX markup.
-                                </p>
-                                <br />
                                 <a
                                     href='https://floatclone.netlify.app/'
                                     target= '_blank'
                                     rel= 'noreferrer'
                                 >
-                                    <b>swipe</b>
-                                    <Arrow className='arrow' />
+                                    <img src={swipe} alt="swipe" />
                                 </a>
+                                
+                                <div>
+                                    <h2>Swipe</h2>
+                                    <br />
+                                    <p>
+                                        Swipe offer credit lines to SMBs to help solve cashflow problem in business.
+                                        <br />
+                                        Swipe is a clone of the old Float website. The site composes of series of CSS animation and JSX markup.
+                                    </p>
+                                    <br />
+                                    <a
+                                        href='https://floatclone.netlify.app/'
+                                        target= '_blank'
+                                        rel= 'noreferrer'
+                                    >
+                                        <b>swipe</b>
+                                        <Arrow className='arrow' />
+                                    </a>    
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -331,15 +396,23 @@ function LandingPage() {
                             target='_blank'
                             rel='noreferrer'
                         >
-
-                        </a>
                             <img src={linkedin} alt="LinkedIn" />
+                        </a>
+                            
                         <a 
                             href="https://www.twitter.com/0d3ra"
                             target='_blank'
                             rel='noreferrer'
                         >
                             <img src={twitter} alt="twitter" />
+                        </a>
+
+                        <a 
+                            href="https://www.github.com/manlikedonald"
+                            target='_blank'
+                            rel='noreferrer' 
+                        >
+                            <img src={github} alt="Github" />    
                         </a>
 
                         <a 

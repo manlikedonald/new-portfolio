@@ -60,7 +60,7 @@ function Urudi() {
                 <div className="define">
                     <div className='text'>
                         <p>
-                            <b>DEFINE</b>                            
+                            <b>Define</b>                            
                         </p>
 
                         <br />
@@ -106,7 +106,7 @@ function Urudi() {
 
                 <div className="ideate">
                     <p>
-                        <b>IDEATE</b>
+                        <b>Ideate</b>
                     </p>
 
                     <br />
@@ -126,11 +126,12 @@ function Urudi() {
 
                 <div className='prototype'>
                     <p>
-                        <b>PROTOTYPE</b>
+                        <b>Prototype</b>
                     </p>
                     <br />
                     <br />
                     <div className="content">
+                        
                         <p>Products centered around finance have to clear, unambiguous because one unclear sentence can make you lose a prospect</p>
                         <p>Seeing that this product was made for SMBs, I created some wireframes and put these screens in the faces of business-oriented people, traders and employees in the fintech space.</p>
                         <br />
@@ -159,65 +160,18 @@ function Urudi() {
                             </div>
                             
                         </div>
-                        {/* <div className="images">
-                            <div>
-                                <img src={whitehome} alt="low fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div>
-                                <img src={whiteabout} alt="low fidelity" />    
-                            </div>
-
-                            &nbsp;
-
-                            <div className='others'>
-                                <img src={whitelogin} alt="low fidelity" />
-                                &nbsp;
-                                <img src={whitesignup} alt="low fidelity" />    
-                            </div>
-                            &nbsp;
-                            <div>
-                                <img src={whitesign} alt="fidelity" />    
-                            </div>
-                            
-                        </div> */}
-                        {/* <br />
-                        <p>
-                            I then put these screens in people’s faces, to get their criticisms/ recommendations.
-                            <br />
-                            The test audience gave lots of feedback, so I handpicked some of the reoccuring comments. 
-                            <br />
-                            Majority of the comments  were of the notion that Urudi should be all about the music. Most of them stated that seeing pictures of their favorite artistes was the best part of the page
-                        </p>
-
-                        <div className='critic-div'>
-                            <img src={critics} alt="critic" />
-                            <span>
-                                <img src={critic} alt="critic" />    
-                            </span>
-                            
-                        </div>
-
-                        <p>A re-design was inevitable, but this time I decided to use A/B testing</p>  */}
+                        
                     </div>
                 </div>
 
                 <div className="test">
-                        
-                    {/* <div className="images">
-                        <span>
-                            <img src={exhibitA} alt="exhibit A" />
-                        </span>
-
-                        <span>
-                            <img src={exhibitB} alt="exhibit B" />
-                        </span>
-                    </div> */}
-                    
                     <div className="content">
-                        Feedback from people showed that they actually loved the design as it gave them a sense of what Engage was all about
+                        <p className='omo'>
+                            Feedback from people showed that they actually loved the design as it gave them a sense of what Engage was all about
+                            <br />
+                            <br />
+                            Here's a preview of the Voluum design;
+                        </p> 
                     </div>
 
                     <div className="video">

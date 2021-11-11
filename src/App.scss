@@ -1,5 +1,8 @@
-$h1Font: 64px;
-$h2Font: 36px;
+$h1Font: 100px;
+$h2Font: 64px;
+$h3Font: 36px;
+$pcolor: #4E5154;
+$buttonColor: #2a3b3b;
 
 *{
     margin: 0;
@@ -13,6 +16,7 @@ $h2Font: 36px;
     }
     p{
         font-size: 18px;
+        line-height: 150%;
     }
     hr{
         width: 2rem;
@@ -31,11 +35,11 @@ $h2Font: 36px;
 }
 
 .landing-page{
-    background: #000;
+    background: #020A13;
     nav{
-        padding: 1rem 120px 1rem 120px;
-        border: 1px solid #000;
-        background: #000;
+        padding: 1rem 120px .5rem 120px;
+        border: none;
+        background: #020A13;
         position: sticky;
         top: 0;
         z-index: 2;
@@ -53,11 +57,15 @@ $h2Font: 36px;
                         font-size: 14px;
                     }
                     button{
-                        background: #6C1B92;
-                        border: 1px solid #6C1B92;
+                        background: #2a3b3b;
+                        border: none;
                         font-weight: 600;
                         position: relative;
                         top: -1rem;
+                    }
+                    button:hover{
+                        background: #020A13;
+                        border: 1px solid #2a3b3b;
                     }
                 }
                 
@@ -66,15 +74,32 @@ $h2Font: 36px;
             
     }
     body{
-        margin: 10rem 120px;
+        margin: auto 120px;
         .first-page{
+            // border: 1px solid #fff;
             margin: auto 50px;
+            padding-top: 10rem;
+            height: 70vh;
+            animation-name: deta;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            cursor: zoom-out;
 
-            @keyframes don{
-                from {color: #F0F0F0;}
-                to {color: #8a1abe;}
+            @keyframes deta {
+                from {margin-top: 10rem;}
+                to {margin-top: 0rem;}
+
+                from {opacity: 0;}
+                to {opacity: 1;}
             }
-
+            .intro{
+                color: #F0F0F0;
+            }
             h1{
                 font-size: $h1Font;
                 text-shadow: 23px -1px 6px #353636;
@@ -85,7 +110,13 @@ $h2Font: 36px;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
                 animation-fill-mode: none;
-                animation-play-state: running;    
+                animation-play-state: running;
+                position: relative;
+                color: rgba(0, 254, 254, 1);
+            }
+            @keyframes don{
+                from {color: #F0F0F0;}
+                to {color: #4a6666;}
             }
             h2{
                 font-size: $h2Font;
@@ -93,20 +124,22 @@ $h2Font: 36px;
             }
             p{
                 margin-bottom: 2rem;
+                color: #4E5154;
             }
             .socials{
                 display: flex;
                 div{
-                    margin-right: 1rem;
+                    margin-right: 2rem;
                 }
             }
         }
         
 
         .second-page{
-            margin: 10rem 50px;
+            // border: 1px solid #fff;
+            margin: auto 50px;
             animation-name: der;
-            animation-duration: 2.5s;
+            animation-duration: 7s;
             animation-timing-function: ease-out;
             animation-delay: 0s;
             animation-iteration-count: 1;
@@ -114,15 +147,21 @@ $h2Font: 36px;
             animation-fill-mode: none;
             animation-play-state: running;
             cursor: zoom-out;
+            height: 80vh;
 
             @keyframes der {
-                from {margin-top: 40rem;}
-                to {margin-top: 10rem;}
+                from {margin-top: 50rem;}
+                to {margin-top: 0rem;}
+
+                from {opacity: 0;}
+                to {opacity: 1;}
             }
 
             h2{
-                font-size: $h2Font;
+                font-size: $h3Font;
                 font-weight: 100;
+                color: #4E5154;
+                
             }
         }
         .third-page{
@@ -135,15 +174,16 @@ $h2Font: 36px;
                 p{
                     color: #757575;
                 }
-                h2{
+                .react-app{
                     font-size: $h2Font;
+                    margin: 20rem auto;
                 }
                 .urudi{
                     display: flex;
                     div{
                         padding: 2rem 5rem 0 0;
                         h2{
-                            font-size: $h2Font;
+                            font-size: $h3Font;
                         }
                         img{
                             position: relative;
@@ -157,11 +197,11 @@ $h2Font: 36px;
                 }
                 .voluum{
                     display: flex;
-                    margin: 5rem auto;
+                    margin: 10rem auto;
                     div{
                         padding: 3rem 5rem 0 0;
                         h2{
-                            font-size: $h2Font;
+                            font-size: $h3Font;
                         }
                         img{
                             position: relative;
@@ -179,7 +219,7 @@ $h2Font: 36px;
                     div{
                         padding: 2.5rem 5rem 0 0;
                         h2{
-                            font-size: $h2Font;
+                            font-size: $h3Font;
                         }
                         img{
                             position: relative;
@@ -232,31 +272,19 @@ $h2Font: 36px;
             }
         }
         .lets-work{
-            display: flex;
-            justify-content: space-between;
-            margin: 5rem auto;
-
+            padding-top: 20rem;
+            height: 60vh;
+            text-align: center;
             @keyframes dera {
-                from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                    -webkit-background-clip: text;
-                    background-clip: min($numbers: 1);
-                    -webkit-text-fill-color: transparent;
-                }
-                to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
-                    -webkit-background-clip: text;
-                    background-clip: min($numbers: 1);
-                    -webkit-text-fill-color: transparent;    
-                ;}
+                from {color: #F0F0F0;}
+                to{ color: #4a6666;}
             }
 
             h1{
                 font-size: $h1Font;
-                background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                -webkit-background-clip: text;
-                background-clip: min($numbers: 1);
-                -webkit-text-fill-color: transparent;
+                color: #F0F0F0;
                 animation-name: dera;
-                animation-duration: 1s;
+                animation-duration: 2.5s;
                 animation-timing-function: ease-out;
                 animation-delay: 0s;
                 animation-iteration-count: infinite;
@@ -269,19 +297,27 @@ $h2Font: 36px;
                 top: 1rem;
                 .email{
                     margin: auto 1rem;
-                    background: #6C1B92;
-                    border: 1px solid #6C1B92;
+                    background: #2a3b3b;
+                    border: none;
                     font-weight: 600;
                 }
+                .email:hover{
+                    background: #020A13;
+                    border: 1px solid #2a3b3b;
+                }
                 .resume{
-                    border: 1px solid #353636;
-                    background: #000;
+                    border: 1px solid #2a3b3b;
+                    background: #020A13;
+                }
+                .resume:hover{
+                    background: #2a3b3b;
                 }
             }
         }
     }
     footer{
         margin: auto 120px;
+        padding-bottom: 1rem;
         .content{ 
             display: flex;
             justify-content: space-between;
@@ -290,7 +326,7 @@ $h2Font: 36px;
                     margin: 1rem auto;
                 }
                 span{
-                    color: #8a1abe;
+                    color: #4a6666;
                 }
             }
             .socials{
@@ -308,12 +344,11 @@ $h2Font: 36px;
 }
 
 .urudi-page, .voluum-page{
-    background: #000;
+    background: #020A13;
     padding: 0 0 3rem 0;
     nav{
         padding: 0 120px 0 120px;
-        border: 1px solid #000;
-        background: #000;
+        background: #020A13;
         position: sticky;
         top: 0;
         z-index: 2;
@@ -331,11 +366,15 @@ $h2Font: 36px;
                         font-size: 14px;
                     }
                     button{
-                        background: #6C1B92;
-                        border: 1px solid #6C1B92;
+                        background: #2a3b3b;
+                        border: none;
                         font-weight: 600;
                         position: relative;
                         top: -1rem;
+                    }
+                    button:hover{
+                        background: #020A13;
+                        border: 1px solid #2a3b3b;
                     }
                 }
                 
@@ -344,11 +383,13 @@ $h2Font: 36px;
             
     }
     body{
-        margin: auto 120px;
+        margin: 1rem 120px;
         .content{
-            font-size: 24px;
+            font-size: $h3Font;
+            color: $pcolor;
             p{
-                font-size: 24px;
+                font-size: $h3Font;
+                color: $pcolor;
             }
         }
         .arrow{
@@ -360,7 +401,7 @@ $h2Font: 36px;
             padding: 2rem 0 2rem 0;
             display: flex;
             justify-content: space-evenly;
-            background: url('./assets/double-bubble-dark.png');
+            background: #2a3b3b;
             .arrow{
                 margin-left: .5rem;
             }
@@ -368,21 +409,43 @@ $h2Font: 36px;
         .heading{
             border-radius: 10px;
             padding: 2rem 5rem 4rem 5rem;
-            background: url('./assets/double-bubble-dark.png');
+            background: #2B3B3B;
             // height: 10rem;
             hr{
                 width: 100%;
+                border: 1px solid #F0F0F0;
+            }
+            h1{
+                font-size: $h2Font;
             }
             p{
                 float: right;
                 font-weight: 600;
-                color: #B1ADB2;
+                color: #757575;
             }
         }
         .define{
-            padding: 4rem 0 0 0;
+            padding: 10rem 0 0 0;
             display: flex;
             justify-content: space-between;
+            height: 80vh;
+            animation-name: depa;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            cursor: zoom-out;
+
+            @keyframes depa {
+                from {margin-top: 10rem;}
+                to {margin-top: 0rem;}
+
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
             .text{
                 padding: 0 5rem 0 0;
             }
@@ -393,12 +456,12 @@ $h2Font: 36px;
                     font-size: 18px;
                 }
                 .numbers{
-                    background: #1C1C1C;
+                    background: #2a3b3b;
                     padding: 0 3rem 0 1rem;
                 }
                 p{
                     font-weight: 600;
-                    font-size: 35px;
+                    font-size: 29px;
                     margin-bottom: 1rem;
                 }
                 hr{
@@ -408,28 +471,38 @@ $h2Font: 36px;
                 }
             }
         }
-        .ideate, .prototype{
+        .ideate{
             padding: 4rem 0 4rem 0;
+            height: 78vh;
         }
         .prototype{
+            padding: 4rem 0 4rem 0;
+            .low-fid{
+                height: 100vh;
+                padding: 0 0 4rem 0;
+                p{
+                    font-size: $h3Font;
+                }
+            }
             .image{
-                background: url('./assets/double-bubble-dark.png');
+                // background: url('./assets/double-bubble-dark.png');
                 padding: 3rem 0rem 3rem 0rem;
                 justify-content: center;
                 display: flex;
                 height: auto;
                 img{
-                    width: 500px;
+                    width: 400px;
                 }
                 figcaption{
                     font-size: 14px;
                 }
             }
             .images{
-                background: #000;
+                // background: #000;
                 padding: 3rem 0rem 3rem 0rem;
                 justify-content: center;
                 display: flex;
+                height: 100vh;
                 .others{
                     display: flex;
                     flex-direction: column;
@@ -438,7 +511,8 @@ $h2Font: 36px;
             .critic-div{
                 display: flex;
                 justify-content: center;
-                padding: 4rem 0 4rem 0;
+                padding: 10rem 0 10rem 0;
+                height: 70vh;
                 img{
                     margin-right: 2rem;
                 }
@@ -446,15 +520,20 @@ $h2Font: 36px;
         }
 
         .test{
+            .omo{
+                padding: 20rem 0 0rem 0;
+            }
             .images{
                 justify-content: center;
                 display: flex;
+                height: 100vh;
                 span{
                     padding: 0 2rem 0 0;
                 }
             }
             .content{
-                padding: 4rem 0 4rem 0;
+                padding: 10rem 0 10rem 0;
+                
             }
             .video{
                 display: flex;
@@ -462,16 +541,25 @@ $h2Font: 36px;
                 video{
                     // margin-top: 15rem;
                     width: 100%;
-                    height: 100%;
-                    
+                    height: 100%;  
                 }
+
             }
         }
 
         .site{
             // text-align: center;
-            padding: 2rem 0 0 0 ;
+            padding: 10rem 0 0 0 ;
+            p{
+                font-size: $h3Font;
+                color: $pcolor;
+            }
+            a{
+                font-size: 18px;
+                color: #F0F0F0;
+            }
         }
+        
     }
     footer{
         margin: auto 120px;
@@ -484,7 +572,7 @@ $h2Font: 36px;
                     margin: 1rem auto;
                 }
                 span{
-                    color: #8a1abe;
+                    color: #4a6666;
                 }
             }
             .socials{
@@ -506,12 +594,12 @@ $h2Font: 36px;
         overflow-x: hidden;
     }
     .landing-page{
-        background: #000;
+        background: #020A13;
         padding: 0 0 1rem 0;
         nav{
             padding: 0 20px 0rem 20px;
-            border: 1px solid #000;
-            background: #000;
+            border: none;
+            background: #020A13;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -544,17 +632,13 @@ $h2Font: 36px;
                 
         }
         body{
-            margin: 5rem 20px;
+            margin: auto 50px;
             .first-page{
                 margin: auto auto;
-    
-                @keyframes don{
-                    from {color: #F0F0F0;}
-                    to {color: #8a1abe;}
-                }
-    
+                height: 90vh;
+                padding-top: 7rem;
                 h1{
-                    font-size: 36px;
+                    font-size: $h2Font;
                     text-shadow: 23px -1px 6px #353636;
                     animation-name: don;
                     animation-duration: 2s;
@@ -563,10 +647,16 @@ $h2Font: 36px;
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
                     animation-fill-mode: none;
-                    animation-play-state: running;    
+                    animation-play-state: running;
+                    position: relative;
+                    color: rgba(0, 254, 254, 1);
+                }
+                @keyframes don{
+                    from {color: #F0F0F0;}
+                    to {color: #4a6666;}
                 }
                 h2{
-                    font-size: 24px;
+                    font-size: $h3Font;
                     margin: 2rem auto;
                 }
                 p{
@@ -592,7 +682,7 @@ $h2Font: 36px;
                 animation-fill-mode: none;
                 animation-play-state: running;
                 cursor: zoom-out;
-    
+                height: 90vh;
                 @keyframes der {
                     from {margin-top: 40rem;}
                     to {margin-top: 5rem;}
@@ -619,6 +709,10 @@ $h2Font: 36px;
                         position: relative;
                         top: 3px;
                     }
+                    .react-app{
+                        font-size: $h3Font;
+                        margin: 10rem auto;
+                    }
                     p{
                         color: #5f5f5f;
                     }
@@ -643,7 +737,8 @@ $h2Font: 36px;
                             margin-right: 0rem;
                             margin-bottom: 1rem;
                             margin-top: 1rem;
-                            height: 230px;
+                            height: 100%;
+                            width: 100%;
                         }
                     }
                     .voluum{
@@ -651,9 +746,9 @@ $h2Font: 36px;
                         flex-direction: column;
                         margin: auto auto;
                         div{
-                            padding: 3rem 0rem 0 0;
+                            padding: 5rem 0rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -665,7 +760,8 @@ $h2Font: 36px;
                             margin-right: 0rem;
                             margin-top: 1rem;
                             margin-bottom: 1rem;
-                            height: 230px;
+                            height: 100%;
+                            width: 100%;
                         }
                     }
                     .engage{
@@ -674,9 +770,9 @@ $h2Font: 36px;
                         margin: auto auto;
                         margin-bottom: 1rem;
                         div{
-                            padding: 2.5rem 0rem 0 0;
+                            padding: 5rem 0rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -688,16 +784,17 @@ $h2Font: 36px;
                             margin-right: 0rem;
                             margin-top: 1rem;
                             margin-bottom: 1rem;
-                            height: 230px;
+                            height: 100%;
+                            width: 100%;
                         }
                     }
                     .dev{
-                        margin: 2rem auto;
+                        margin: auto auto;
                         display: flex;
                         flex-direction: column;
                         .urudi-dev{
                             width: auto;
-                            padding-bottom: 2rem;
+                            padding-bottom: 5rem;
                             h2{
                                 font-size: 36px;
                             }
@@ -713,8 +810,8 @@ $h2Font: 36px;
                         }
                         .coincrow{
                             width: auto;
-                            padding-bottom: 2rem;
-                            margin: 2rem auto;
+                            padding-bottom: 5rem;
+                            margin: auto auto;
                             h2{
                                 font-size: 36px;
                             }
@@ -749,31 +846,20 @@ $h2Font: 36px;
             .lets-work{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                margin: 1rem auto;
+                // justify-content: space-between;
+                margin: 13rem auto;
                 padding: 1rem 0 1rem 00;
-    
+                height: 50vh;
                 @keyframes dera {
-                    from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                        -webkit-background-clip: text;
-                        background-clip: min($numbers: 1);
-                        -webkit-text-fill-color: transparent;
-                    }
-                    to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
-                        -webkit-background-clip: text;
-                        background-clip: min($numbers: 1);
-                        -webkit-text-fill-color: transparent;    
-                    ;}
+                    from {color: #F0F0F0;}
+                    to{ color: #4a6666;}
                 }
     
                 h1{
-                    font-size: 36px;
-                    background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                    -webkit-background-clip: text;
-                    background-clip: min($numbers: 1);
-                    -webkit-text-fill-color: transparent;
+                    font-size: $h2Font;
+                    color: #F0F0F0;
                     animation-name: dera;
-                    animation-duration: 1s;
+                    animation-duration: 2s;
                     animation-timing-function: ease-out;
                     animation-delay: 0s;
                     animation-iteration-count: infinite;
@@ -785,63 +871,78 @@ $h2Font: 36px;
                     position: relative;
                     top: 1rem;
                     display: flex;
+                    justify-content: center;
                     .email{
-                        margin: auto .5rem;
-                        background: #6C1B92;
-                        border: 1px solid #6C1B92;
+                        margin: auto auto;
+                        margin-right: 1rem;
+                        background: #2a3b3b;
+                        border: none;
                         font-weight: 600;
+                        width: 130px;
+                    }
+                    .email:hover{
+                        background: #020A13;
+                        border: 1px solid #2a3b3b;
                     }
                     .resume{
-                        border: 1px solid #353636;
-                        background: #000;
+                        border: 1px solid #2a3b3b;
+                        background: #020A13;
+                        // width: 100%;
+                        width: 130px;
+                    }
+                    .resume:hover{
+                        background: #2a3b3b;
                     }
                 }
             }
         }
         footer{
             margin: auto 20px;
+            height: 100%;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
-                    display: flex;
-                    padding: 0 0 1rem 0;
+                    // display: flex;
+                    padding: 0 2rem 1rem 0;
                     img{
                         width: 50px;
                     }
                     p{
-                        margin: 1rem 1rem;
+                        // margin: 1rem 1rem;
                         font-size: 14px;
+                        display: none;
                     }
                     span{
-                        color: #8a1abe;
+                        color: #4a6666;
                     }
                 }
                 .socials{
                     position: relative;
-                    top: -2rem;
-                    left: 2rem;
+                    // top: -2rem;
+                    // left: 2rem;
                     display: flex;
-                    display: none;
+                    // display: none;
                     img{
                         margin-right: 3rem;
-                        // width: 70px;
+                        width: 25px;
                     }
                 }
             }
             p{
+                padding: 3rem 0 0 0;
                 text-align: center;
             }
         }
     }
     
     .urudi-page, .voluum-page{
-        background: #000;
+        background: #020A13;
         padding: 0 0 1rem 0;
         nav{
-            padding: 0 20px 0 20px;
-            border: 1px solid #000;
-            background: #000;
+            padding: 1rem 20px .5rem 20px;
+            border: none;
+            background: #020A13;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -887,19 +988,25 @@ $h2Font: 36px;
             }
             .case-study{
                 margin-top: 4rem;
-                padding: 2rem 0 2rem 0;
+                padding: 2rem .5rem 2rem .5rem;
                 display: flex;
                 justify-content: space-between;
-                background: url('./assets/double-bubble-dark.png');
+                background: #2B3B3B;
+                p{
+                    font-size: 14px;
+                }
                 .arrow{
                     margin-left: .5rem;
                 }
             }
             .heading{
                 border-radius: 10px;
-                padding: 2rem 1rem 2rem 1rem;
-                background: url('./assets/double-bubble-dark.png');
+                padding: 2rem 1rem 3rem 1rem;
+                background: #2B3B3B;
                 // height: 10rem;
+                h1{
+                    font-size: $h3Font;
+                }
                 hr{
                     width: 100%;
                 }
@@ -940,13 +1047,20 @@ $h2Font: 36px;
                     }
                 }
             }
-            .ideate, .prototype{
+            .ideate{
                 padding: 6rem 0 2rem 0;
+                height: 90vh;
             }
+            
             .prototype{
+                .low-fid{
+                    height: 100%;
+                    padding: 0 0 2rem 0;
+                    p{
+                        font-size: 24px;
+                    }
+                }
                 .image{
-                    background: url('./assets/double-bubble-dark.png');
-                    padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
                     height: auto;
@@ -958,11 +1072,12 @@ $h2Font: 36px;
                     }
                 }
                 .images{
-                    background: #000;
+                    // background: #000;
                     padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     .others{
                         display: flex;
                         flex-direction: column;
@@ -976,24 +1091,28 @@ $h2Font: 36px;
                     flex-direction: column;
                     justify-content: center;
                     padding: 4rem 0 4rem 0;
+                    height: 100%;
                     img{
                         margin-right: 2rem;
+                        margin-top: 3rem;
                         width: 100%;
                     }
                 }
             }
     
             .test{
+                padding-top: 4rem;
                 .images{
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     span{
                         padding: 0 2rem 0 0;
                     }
                     .exhibita, .exhibitb{
                         width: 100%;
-                        margin-bottom: .5rem;
+                        margin-top: 5rem;
                     }
                 }
                 .content{
@@ -1002,6 +1121,7 @@ $h2Font: 36px;
                 .video{
                     display: flex;
                     justify-content: center;
+                    height: 100%;
                     video{
                         // margin-top: 15rem;
                         width: 100%;
@@ -1013,41 +1133,52 @@ $h2Font: 36px;
     
             .site{
                 // text-align: center;
-                padding: 2rem 0 0 0 ;
+                padding: 5rem 0 3rem 0 ;
+                p{
+                    font-size: 24px;
+                    color: $pcolor;
+                }
+                a{
+                    font-size: 18px;
+                    color: #F0F0F0;
+                }
             }
         }
         footer{
             margin: auto 20px;
+            height: 20vh;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
-                    display: flex;
-                    padding: 0 0 1rem 0;
+                    // display: flex;
+                    padding: 0 2rem 1rem 0;
                     img{
                         width: 50px;
                     }
                     p{
-                        margin: 1rem 1rem;
+                        // margin: 1rem 1rem;
                         font-size: 14px;
+                        display: none;
                     }
                     span{
-                        color: #8a1abe;
+                        color: #4a6666;
                     }
                 }
                 .socials{
                     position: relative;
-                    top: -2rem;
-                    left: 2rem;
+                    // top: -2rem;
+                    // left: 2rem;
                     display: flex;
-                    display: none;
+                    // display: none;
                     img{
                         margin-right: 3rem;
-                        // width: 70px;
+                        width: 25px;
                     }
                 }
             }
             p{
+                padding: 3rem 0 0 0;
                 text-align: center;
             }
         }
@@ -1059,12 +1190,12 @@ $h2Font: 36px;
         overflow-x: hidden;
     }
     .landing-page{
-        background: #000;
+        background: #020A13;
         padding: 0 0 1rem 0;
         nav{
-            padding: 1rem 50px 1rem 50px;
-            border: 1px solid #000;
-            background: #000;
+            padding: 1rem 120px 1rem 120px;
+            border: none;
+            background: #020A13;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -1082,11 +1213,9 @@ $h2Font: 36px;
                             font-size: 14px;
                         }
                         button{
-                            background: #6C1B92;
-                            border: 1px solid #6C1B92;
+                            background: $buttonColor;
+                            border: none;
                             font-weight: 600;
-                            position: relative;
-                            top: -1rem;
                         }
                     }
                     
@@ -1095,17 +1224,18 @@ $h2Font: 36px;
                 
         }
         body{
-            margin: 5rem 50px;
+            margin: 5rem 120px;
             .first-page{
                 margin: auto auto;
-    
+                padding-top: 5rem;
+                height: 90vh;
                 @keyframes don{
                     from {color: #F0F0F0;}
-                    to {color: #8a1abe;}
+                    to {color: $buttonColor;}
                 }
     
                 h1{
-                    font-size: 48px;
+                    font-size: $h1Font;
                     text-shadow: 23px -1px 6px #353636;
                     animation-name: don;
                     animation-duration: 2s;
@@ -1117,12 +1247,12 @@ $h2Font: 36px;
                     animation-play-state: running;    
                 }
                 h2{
-                    font-size: 24px;
+                    font-size: $h2Font;
                     margin: 2rem auto;
                 }
                 p{
                     margin-bottom: 2rem;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 .socials{
                     display: flex;
@@ -1144,23 +1274,23 @@ $h2Font: 36px;
                 animation-fill-mode: none;
                 animation-play-state: running;
                 cursor: zoom-out;
-    
+                height: 90vh;
                 @keyframes der {
                     from {margin-top: 40rem;}
                     to {margin-top: 5rem;}
                 }
                 p{
-                    font-size: 16px;
+                    font-size: 18px;
                 }
     
                 h2{
-                    font-size: 24px;
+                    font-size: $h3Font;
                     font-weight: 100;
                 }
             }
             .third-page{
                 p{
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 .works{
                     margin: 0rem 0px;
@@ -1183,7 +1313,7 @@ $h2Font: 36px;
                         div{
                             padding: 2rem 0rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -1200,11 +1330,11 @@ $h2Font: 36px;
                     .voluum{
                         display: flex;
                         flex-direction: column;
-                        margin: 2rem auto;
+                        margin: 5rem auto;
                         div{
                             padding: 3rem 0rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -1223,9 +1353,9 @@ $h2Font: 36px;
                         flex-direction: column;
                         margin: 2rem auto;
                         div{
-                            padding: 2.5rem 0rem 0 0;
+                            padding: 3rem 0rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -1263,7 +1393,7 @@ $h2Font: 36px;
                         .coincrow{
                             width: auto;
                             padding-bottom: 2rem;
-                            margin: 2rem auto;
+                            margin: 5rem auto;
                             h2, p{
                                 padding: 0 0rem 0 0;
                             }
@@ -1290,33 +1420,19 @@ $h2Font: 36px;
                 }
             }
             .lets-work{
-                display: flex;
-                // flex-direction: column;
-                justify-content: space-between;
-                margin: 1rem auto;
-                padding: 1rem 0 1rem 00;
-    
+                padding-top: 20rem;
+                height: 60vh;
+                text-align: center;
                 @keyframes dera {
-                    from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                        -webkit-background-clip: text;
-                        background-clip: min($numbers: 1);
-                        -webkit-text-fill-color: transparent;
-                    }
-                    to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
-                        -webkit-background-clip: text;
-                        background-clip: min($numbers: 1);
-                        -webkit-text-fill-color: transparent;    
-                    ;}
+                    from {color: #F0F0F0;}
+                    to{ color: #4a6666;}
                 }
-    
+
                 h1{
-                    font-size: 36px;
-                    background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                    -webkit-background-clip: text;
-                    background-clip: min($numbers: 1);
-                    -webkit-text-fill-color: transparent;
+                    font-size: $h1Font;
+                    color: #F0F0F0;
                     animation-name: dera;
-                    animation-duration: 1s;
+                    animation-duration: 2.5s;
                     animation-timing-function: ease-out;
                     animation-delay: 0s;
                     animation-iteration-count: infinite;
@@ -1327,65 +1443,72 @@ $h2Font: 36px;
                 .buttons{
                     position: relative;
                     top: 1rem;
-                    display: flex;
                     .email{
-                        margin: .1rem .5rem;
-                        background: #6C1B92;
-                        border: 1px solid #6C1B92;
+                        margin: auto 1rem;
+                        background: #2a3b3b;
+                        border: none;
                         font-weight: 600;
                     }
+                    .email:hover{
+                        background: #020A13;
+                        border: 1px solid #2a3b3b;
+                    }
                     .resume{
-                        border: 1px solid #353636;
-                        background: #000;
+                        border: 1px solid #2a3b3b;
+                        background: #020A13;
+                    }
+                    .resume:hover{
+                        background: #2a3b3b;
                     }
                 }
             }
         }
         footer{
-            margin: auto 20px;
-            padding: 0rem 0 1rem 0;
+            margin: auto 50px;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
-                    display: flex;
+                    // display: flex;
+                    padding: 0 2rem 1rem 0;
                     img{
-                        width: 100px;
+                        width: 70px;
                     }
                     p{
-                        margin: 3rem 1rem;
+                        margin: auto auto;
                         font-size: 14px;
+                        // display: none;
                     }
                     span{
-                        color: #8a1abe;
+                        color: #4a6666;
                     }
                 }
                 .socials{
-                    
                     position: relative;
-                    top: -2rem;
-                    left: 2rem;
+                    // top: -2rem;
+                    // left: 2rem;
                     display: flex;
+                    // display: none;
                     img{
                         margin-right: 3rem;
-                        width: 70px;
-                        display: none;
+                        width: 40px;
                     }
                 }
             }
             p{
+                padding: 3rem 0 0 0;
                 text-align: center;
             }
         }
     }
     
     .urudi-page, .voluum-page{
-        background: #000;
-        padding: 0 0 3rem 0;
+        background: #020A13;
+        padding: 0 0 1rem 0;
         nav{
-            padding: 0 50px 0 50px;
-            border: 1px solid #000;
-            background: #000;
+            padding: 1rem 50px .5rem 50px;
+            border: none;
+            background: #020A13;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -1401,7 +1524,7 @@ $h2Font: 36px;
                         li{
                             margin-right: 3rem;
                             font-size: 14px;
-                            // display: none;
+                            display: none;
                         }
                         button{
                             background: #6C1B92;
@@ -1409,7 +1532,7 @@ $h2Font: 36px;
                             font-weight: 600;
                             position: relative;
                             top: -1rem;
-                            // display: none;
+                            display: none;
                         }
                     }
                     
@@ -1420,9 +1543,9 @@ $h2Font: 36px;
         body{
             margin: auto 50px;
             .content{
-                font-size: 24px;
+                font-size: $h3Font;
                 p{
-                    font-size: 24px;
+                    font-size: $h3Font;
                 }
             }
             .arrow{
@@ -1431,19 +1554,26 @@ $h2Font: 36px;
             }
             .case-study{
                 margin-top: 4rem;
-                padding: 2rem 0 2rem 0;
+                padding: 2rem .5rem 2rem .5rem;
                 display: flex;
                 justify-content: space-evenly;
-                background: url('./assets/double-bubble-dark.png');
+                background: #2B3B3B;
+                p{
+                    font-size: 18px;
+                }
                 .arrow{
                     margin-left: .5rem;
                 }
             }
             .heading{
                 border-radius: 10px;
-                padding: 2rem 1rem 4rem 1rem;
-                background: url('./assets/double-bubble-dark.png');
+                padding: 2rem 1rem 3rem 1rem;
+                background: #2B3B3B;
+                margin-top: 2rem;
                 // height: 10rem;
+                h1{
+                    font-size: $h3Font;
+                }
                 hr{
                     width: 100%;
                 }
@@ -1458,6 +1588,7 @@ $h2Font: 36px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                height: 90vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1484,13 +1615,19 @@ $h2Font: 36px;
                     }
                 }
             }
-            .ideate, .prototype{
-                padding: 6rem 0 2rem 0;
+            .ideate{
+                height: 90vh;
             }
+            
             .prototype{
+                .low-fid{
+                    height: 100%;
+                    padding: 0 0 2rem 0;
+                    p{
+                        font-size: $h3Font;
+                    }
+                }
                 .image{
-                    background: url('./assets/double-bubble-dark.png');
-                    padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
                     height: auto;
@@ -1502,11 +1639,12 @@ $h2Font: 36px;
                     }
                 }
                 .images{
-                    background: #000;
+                    // background: #000;
                     padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     .others{
                         display: flex;
                         flex-direction: column;
@@ -1520,24 +1658,28 @@ $h2Font: 36px;
                     flex-direction: column;
                     justify-content: center;
                     padding: 4rem 0 4rem 0;
+                    height: 100%;
                     img{
                         margin-right: 2rem;
+                        margin-top: 3rem;
                         width: 100%;
                     }
                 }
             }
     
             .test{
+                padding-top: 5rem;
                 .images{
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     span{
                         padding: 0 2rem 0 0;
                     }
                     .exhibita, .exhibitb{
                         width: 100%;
-                        margin-bottom: .5rem;
+                        margin-top: 5rem;
                     }
                 }
                 .content{
@@ -1546,6 +1688,7 @@ $h2Font: 36px;
                 .video{
                     display: flex;
                     justify-content: center;
+                    height: 100%;
                     video{
                         // margin-top: 15rem;
                         width: 100%;
@@ -1557,7 +1700,15 @@ $h2Font: 36px;
     
             .site{
                 // text-align: center;
-                padding: 2rem 0 0 0 ;
+                padding: 5rem 0 3rem 0 ;
+                p{
+                    font-size: $h3Font;
+                    color: $pcolor;
+                }
+                a{
+                    font-size: 18px;
+                    color: #F0F0F0;
+                }
             }
         }
         footer{
@@ -1566,26 +1717,34 @@ $h2Font: 36px;
                 display: flex;
                 justify-content: space-between;
                 .donald{
+                    // display: flex;
+                    padding: 0 2rem 1rem 0;
+                    img{
+                        width: 50px;
+                    }
                     p{
-                        margin: 1rem auto;
+                        // margin: 1rem 1rem;
                         font-size: 14px;
+                        display: none;
                     }
                     span{
-                        color: #8a1abe;
+                        color: #4a6666;
                     }
                 }
                 .socials{
                     position: relative;
-                    top: -2rem;
-                    left: 2rem;
+                    // top: -2rem;
+                    // left: 2rem;
                     display: flex;
+                    // display: none;
                     img{
                         margin-right: 3rem;
-                        // width: 70px;
+                        width: 25px;
                     }
                 }
             }
             p{
+                padding: 3rem 0 0 0;
                 text-align: center;
             }
         }
@@ -1594,11 +1753,12 @@ $h2Font: 36px;
 
 @media all and (min-width: 769px) and (max-width: 1024px){
     .landing-page{
-        background: #000;
+        background: #020A13;
+        padding: 0 0 1rem 0;
         nav{
-            padding: 1rem 100px 1rem 100px;
-            border: 1px solid #000;
-            background: #000;
+            padding: 1rem 120px 1rem 120px;
+            border: none;
+            background: #020A13;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -1616,11 +1776,9 @@ $h2Font: 36px;
                             font-size: 14px;
                         }
                         button{
-                            background: #6C1B92;
-                            border: 1px solid #6C1B92;
+                            background: $buttonColor;
+                            border: none;
                             font-weight: 600;
-                            position: relative;
-                            top: -1rem;
                         }
                     }
                     
@@ -1629,17 +1787,17 @@ $h2Font: 36px;
                 
         }
         body{
-            margin: 5rem 100px;
+            margin: 5rem 120px;
             .first-page{
                 margin: auto auto;
-    
+                padding-top: 15rem;
                 @keyframes don{
                     from {color: #F0F0F0;}
-                    to {color: #8a1abe;}
+                    to {color: $buttonColor;}
                 }
     
                 h1{
-                    font-size: 64px;
+                    font-size: $h1Font;
                     text-shadow: 23px -1px 6px #353636;
                     animation-name: don;
                     animation-duration: 2s;
@@ -1651,7 +1809,7 @@ $h2Font: 36px;
                     animation-play-state: running;    
                 }
                 h2{
-                    font-size: 36px;
+                    font-size: $h2Font;
                     margin: 2rem auto;
                 }
                 p{
@@ -1688,7 +1846,7 @@ $h2Font: 36px;
                 }
     
                 h2{
-                    font-size: 36px;
+                    font-size: $h3Font;
                     font-weight: 100;
                 }
             }
@@ -1709,15 +1867,15 @@ $h2Font: 36px;
                         color: #757575;;
                     }
                     h2{
-                        font-size: 36px;
+                        font-size: 24px;
                     }
                     .urudi{
                         display: flex;
-                        flex-direction: column;
+                        // flex-direction: column;
                         div{
-                            padding: 2rem 0rem 0 0;
+                            padding: 2rem 2rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -1733,12 +1891,12 @@ $h2Font: 36px;
                     }
                     .voluum{
                         display: flex;
-                        flex-direction: column;
-                        margin: 2rem auto;
+                        // flex-direction: column;
+                        margin: 5rem auto;
                         div{
-                            padding: 3rem 0rem 0 0;
+                            padding: 2rem 2rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -1754,12 +1912,12 @@ $h2Font: 36px;
                     }
                     .engage{
                         display: flex;
-                        flex-direction: column;
+                        // flex-direction: column;
                         margin: 2rem auto;
                         div{
-                            padding: 2.5rem 0rem 0 0;
+                            padding: 2rem 2rem 0 0;
                             h2{
-                                font-size: $h2Font;
+                                font-size: $h3Font;
                             }
                             img{
                                 position: relative;
@@ -1777,75 +1935,72 @@ $h2Font: 36px;
                         margin: 2rem auto;
                         display: flex;
                         flex-direction: column;
+                        h2{
+                            font-size: 36px;
+                        }
                         .urudi-dev{
                             width: auto;
                             padding-bottom: 2rem;
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                            display: flex;
+                            div{
+                                margin-left: 10rem;
                             }
                             img{
                                 position: relative;
                                 top: 3px;
-                                left: 5px;
-                                width: 100%;
+                                left: 0px;
+                                width: 170%;
+                                // height: 100%;
                             }
                         }
                         .coincrow{
                             width: auto;
                             padding-bottom: 2rem;
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                            margin: 5rem auto;
+                            display: flex;
+                            div{
+                                margin-left: 12rem;
                             }
                             img{
                                 position: relative;
                                 top: 3px;
-                                left: 5px;
-                                width: 100%;
+                                left: 0px;
+                                width: 220%;
+                                // height: 100%;
                             }
                         }
                         .swipe{
                             width: auto;
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                            padding-bottom: 2rem;
+                            display: flex;
+                            div{
+                                margin-left: 7rem;
                             }
                             img{
                                 position: relative;
                                 top: 3px;
-                                left: 5px;
-                                width: 100%;
+                                left: 0px;
+                                width: 140%;
+                                // height: 100%;
                             }
                         }
                     }
                 }
             }
             .lets-work{
-                display: flex;
-                // flex-direction: column;
-                justify-content: space-between;
-                margin: 1rem auto;
-                padding: 2rem 0 1rem 00;
-    
+                padding-top: 20rem;
+                height: 60vh;
+                text-align: center;
                 @keyframes dera {
-                    from {background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                        -webkit-background-clip: text;
-                        background-clip: min($numbers: 1);
-                        -webkit-text-fill-color: transparent;
-                    }
-                    to{background: -webkit-radial-gradient(#F0F0F0, #F0F0F0, #353636, #353636, #353636);
-                        -webkit-background-clip: text;
-                        background-clip: min($numbers: 1);
-                        -webkit-text-fill-color: transparent;    
-                    ;}
+                    from {color: #F0F0F0;}
+                    to{ color: #4a6666;}
                 }
-    
+
                 h1{
-                    font-size: 36px;
-                    background: -webkit-radial-gradient(#353636, #353636, #F0F0F0, #F0F0F0, #F0F0F0);
-                    -webkit-background-clip: text;
-                    background-clip: min($numbers: 1);
-                    -webkit-text-fill-color: transparent;
+                    font-size: $h1Font;
+                    color: #F0F0F0;
                     animation-name: dera;
-                    animation-duration: 1s;
+                    animation-duration: 2.5s;
                     animation-timing-function: ease-out;
                     animation-delay: 0s;
                     animation-iteration-count: infinite;
@@ -1855,61 +2010,73 @@ $h2Font: 36px;
                 }
                 .buttons{
                     position: relative;
-                    top: 0rem;
-                    display: flex;
+                    top: 1rem;
                     .email{
-                        margin: .1rem .5rem;
-                        background: #6C1B92;
-                        border: 1px solid #6C1B92;
+                        margin: auto 1rem;
+                        background: #2a3b3b;
+                        border: none;
                         font-weight: 600;
                     }
+                    .email:hover{
+                        background: #020A13;
+                        border: 1px solid #2a3b3b;
+                    }
                     .resume{
-                        border: 1px solid #353636;
-                        background: #000;
+                        border: 1px solid #2a3b3b;
+                        background: #020A13;
+                    }
+                    .resume:hover{
+                        background: #2a3b3b;
                     }
                 }
             }
         }
         footer{
-            margin: auto 20px;
+            margin: auto 50px;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
-                    display: flex;
+                    // display: flex;
+                    padding: 0 2rem 1rem 0;
+                    img{
+                        width: 70px;
+                    }
                     p{
-                        margin: 3rem 1rem;
+                        margin: auto auto;
                         font-size: 14px;
+                        // display: none;
                     }
                     span{
-                        color: #8a1abe;
+                        color: #4a6666;
                     }
                 }
                 .socials{
                     position: relative;
-                    top: -2rem;
-                    left: 2rem;
+                    // top: -2rem;
+                    // left: 2rem;
                     display: flex;
+                    // display: none;
                     img{
                         margin-right: 3rem;
-                        display: none;
                         width: 40px;
                     }
                 }
             }
             p{
+                padding: 3rem 0 0 0;
                 text-align: center;
             }
         }
     }
     
     .urudi-page, .voluum-page{
-        background: #000;
-        padding: 0 0 3rem 0;
+        background: #020A13;
+        padding: 0 0 1rem 0;
         nav{
-            padding: 0 50px 0 50px;
-            border: 1px solid #000;
-            background: #000;
+            padding: 1rem 50px .5rem 50px;
+            border: none;
+            background: #020A13;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -1928,8 +2095,8 @@ $h2Font: 36px;
                             // display: none;
                         }
                         button{
-                            background: #6C1B92;
-                            border: 1px solid #6C1B92;
+                            background: $buttonColor;
+                            border: none;
                             font-weight: 600;
                             position: relative;
                             top: -1rem;
@@ -1944,9 +2111,9 @@ $h2Font: 36px;
         body{
             margin: auto 50px;
             .content{
-                font-size: 24px;
+                font-size: $h3Font;
                 p{
-                    font-size: 24px;
+                    font-size: $h3Font;
                 }
             }
             .arrow{
@@ -1955,19 +2122,26 @@ $h2Font: 36px;
             }
             .case-study{
                 margin-top: 4rem;
-                padding: 2rem 0 2rem 0;
+                padding: 2rem .5rem 2rem .5rem;
                 display: flex;
                 justify-content: space-evenly;
-                background: url('./assets/double-bubble-dark.png');
+                background: #2B3B3B;
+                p{
+                    font-size: 18px;
+                }
                 .arrow{
                     margin-left: .5rem;
                 }
             }
             .heading{
                 border-radius: 10px;
-                padding: 2rem 1rem 4rem 1rem;
-                background: url('./assets/double-bubble-dark.png');
+                padding: 2rem 1rem 3rem 1rem;
+                background: #2B3B3B;
+                margin-top: 2rem;
                 // height: 10rem;
+                h1{
+                    font-size: $h3Font;
+                }
                 hr{
                     width: 100%;
                 }
@@ -1978,10 +2152,11 @@ $h2Font: 36px;
                 }
             }
             .define{
-                padding: 4rem 0 0 0;
+                padding: 15rem 0 0 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                height: 90vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -2008,13 +2183,19 @@ $h2Font: 36px;
                     }
                 }
             }
-            .ideate, .prototype{
-                padding: 6rem 0 2rem 0;
+            .ideate{
+                height: 80vh;
             }
+            
             .prototype{
+                .low-fid{
+                    height: 100%;
+                    padding: 0 0 2rem 0;
+                    p{
+                        font-size: $h3Font;
+                    }
+                }
                 .image{
-                    background: url('./assets/double-bubble-dark.png');
-                    padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
                     height: auto;
@@ -2026,11 +2207,12 @@ $h2Font: 36px;
                     }
                 }
                 .images{
-                    background: #000;
+                    // background: #000;
                     padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     .others{
                         display: flex;
                         flex-direction: column;
@@ -2044,24 +2226,28 @@ $h2Font: 36px;
                     flex-direction: column;
                     justify-content: center;
                     padding: 4rem 0 4rem 0;
+                    height: 100%;
                     img{
                         margin-right: 2rem;
+                        margin-top: 3rem;
                         width: 100%;
                     }
                 }
             }
     
             .test{
+                padding-top: 5rem;
                 .images{
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     span{
                         padding: 0 2rem 0 0;
                     }
                     .exhibita, .exhibitb{
                         width: 100%;
-                        margin-bottom: .5rem;
+                        margin-top: 5rem;
                     }
                 }
                 .content{
@@ -2070,6 +2256,7 @@ $h2Font: 36px;
                 .video{
                     display: flex;
                     justify-content: center;
+                    height: 100%;
                     video{
                         // margin-top: 15rem;
                         width: 100%;
@@ -2081,7 +2268,15 @@ $h2Font: 36px;
     
             .site{
                 // text-align: center;
-                padding: 2rem 0 0 0 ;
+                padding: 5rem 0 3rem 0 ;
+                p{
+                    font-size: $h3Font;
+                    color: $pcolor;
+                }
+                a{
+                    font-size: 18px;
+                    color: #F0F0F0;
+                }
             }
         }
         footer{
@@ -2090,26 +2285,34 @@ $h2Font: 36px;
                 display: flex;
                 justify-content: space-between;
                 .donald{
+                    // display: flex;
+                    padding: 0 2rem 1rem 0;
+                    img{
+                        width: 50px;
+                    }
                     p{
-                        margin: 1rem auto;
+                        // margin: 1rem 1rem;
                         font-size: 14px;
+                        display: none;
                     }
                     span{
-                        color: #8a1abe;
+                        color: #4a6666;
                     }
                 }
                 .socials{
                     position: relative;
-                    top: -2rem;
-                    left: 2rem;
+                    // top: -2rem;
+                    // left: 2rem;
                     display: flex;
+                    // display: none;
                     img{
                         margin-right: 3rem;
-                        // width: 70px;
+                        width: 25px;
                     }
                 }
             }
             p{
+                padding: 3rem 0 0 0;
                 text-align: center;
             }
         }

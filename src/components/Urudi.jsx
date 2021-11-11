@@ -21,6 +21,7 @@ import video from '../assets/Screen Recording 2021-10-29 at 09.57.32.mov'
 import donald from '../assets/Ellipse 2.svg'
 import linkedin from '../assets/bx_bxl-linkedin.svg'
 import twitter from '../assets/ant-design_twitter-outlined.svg'
+import github from '../assets/github.svg'
 import medium from '../assets/akar-icons_medium-fill.svg'
 
 function Urudi() {
@@ -69,7 +70,7 @@ function Urudi() {
                 <div className="define">
                     <div className='text'>
                         <p>
-                            <b>DEFINE</b>                            
+                            <b>Define</b>                            
                         </p>
 
                         <br />
@@ -81,6 +82,7 @@ function Urudi() {
                             <br />
                             Pretty sweet right? Exactly !
                         </p>
+                        <br />
                         <br />
                         <p>
                             <a 
@@ -111,7 +113,7 @@ function Urudi() {
 
                 <div className="ideate">
                     <p>
-                        <b>IDEATE</b>
+                        <b>Ideate</b>
                     </p>
 
                     <br />
@@ -133,21 +135,25 @@ function Urudi() {
 
                 <div className='prototype'>
                     <p>
-                        <b>PROTOTYPE</b>
+                        <b>Prototype</b>
                     </p>
                     <br />
                     <br />
                     <div className="content">
-                        <div className="image">
-                            <figure>
-                                <img src={lowfidel} alt="low fidelity"  />
-                                <figcaption>Low Fidelity Urudi</figcaption>
-                            </figure>
+                        <div className='low-fid'>
+                            <p>I already had a picture in my head, so I drew out a mock-up of what I thought Urudi should look like. It is important to note that I draw better than this, this was a eureka moment.</p>
                             
+                            <div className="image">
+                                <figure>
+                                    <img src={lowfidel} alt="low fidelity"  />
+                                    <figcaption>Low Fidelity Urudi</figcaption>
+                                </figure>
+                                
+                            </div>
+                            <br />
+                            <p>Regardless of how funny this prototype looks, the idea is to explain in simple terms, what Urudi is all about and then buttress our point with  pictures of famous artistes</p>
+                            <p>After making the ‘top notch’ low-fidelity prototype, it was time to get high fidelity screens in people’s faces.</p>
                         </div>
-                        <br />
-                        <p>Regardless of how funny this prototype looks, the idea was to explain in simple terms, what Urudi is all about and then buttress our point with  pictures of famous artistes</p>
-                        <p>After making the ‘top notch’ low-fidelity prototype, it was time to get high fidelity screens in people’s faces.</p>
                         <br />
                         <div className="images">
                             <div>
@@ -202,9 +208,9 @@ function Urudi() {
                         <p>
                             I then put these screens in people’s faces, to get their criticisms/ recommendations.
                             <br />
-                            The test audience gave lots of feedback, so I handpicked some of the reoccuring comments. 
+                            The test audience gave lots of feedback, majority were of the notion that Urudi should be all about the music. 
                             <br />
-                            Majority of the comments  were of the notion that Urudi should be all about the music. Most of them stated that seeing pictures of their favorite artistes was the best part of the page
+                            Most of them stated that seeing pictures of their favorite artistes was the best part of the page
                         </p>
 
                         <div className='critic-div'>
@@ -217,12 +223,11 @@ function Urudi() {
                             
                         </div>
 
-                        <p>A re-design was inevitable, but this time I decided to use A/B testing</p> 
+                        <p>A re-design was inevitable, but this time I decided to use A/B testing. I designed two landing pages based on the input received from the test subjects, I then asked them to make a choice </p> 
                     </div>
                 </div>
 
                 <div className="test">
-                        
                     <div className="images">
                         <span>
                             <img src={exhibitA} alt="exhibit A" className='exhibita' />
@@ -306,9 +311,37 @@ function Urudi() {
                     <div></div>
 
                     <div className="socials">
-                        <img src={linkedin} alt="LinkedIn" />
-                        <img src={twitter} alt="twitter" />
-                        <img src={medium} alt="Medium" />
+                    <a 
+                            href="https://www.linkedin.com/in/donald-ugobude/"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={linkedin} alt="LinkedIn" />
+                        </a>
+                            
+                        <a 
+                            href="https://www.twitter.com/0d3ra"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={twitter} alt="twitter" />
+                        </a>
+
+                        <a 
+                            href="https://www.github.com/manlikedonald"
+                            target='_blank'
+                            rel='noreferrer' 
+                        >
+                            <img src={github} alt="Github" />    
+                        </a>
+
+                        <a 
+                            href="https://medium.com/@odera"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={medium} alt="Medium" />    
+                        </a>
                     </div>
 
                     <div></div>

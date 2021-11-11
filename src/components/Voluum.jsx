@@ -8,6 +8,7 @@ import video from '../assets/Screen Recording 2021-11-03 at 07.42.28.mov'
 import donald from '../assets/Ellipse 2.svg'
 import linkedin from '../assets/bx_bxl-linkedin.svg'
 import twitter from '../assets/ant-design_twitter-outlined.svg'
+import github from '../assets/github.svg'
 import medium from '../assets/akar-icons_medium-fill.svg'
 
 function Urudi() {
@@ -56,7 +57,7 @@ function Urudi() {
                 <div className="define">
                     <div className='text'>
                         <p>
-                            <b>DEFINE</b>                            
+                            <b>Define</b>                            
                         </p>
 
                         <br />
@@ -70,6 +71,7 @@ function Urudi() {
                             <br />
                             Pretty sweet right? Exactly !
                         </p>
+                        <br />
                         <br />
                         <p>
                             <a 
@@ -100,7 +102,7 @@ function Urudi() {
 
                 <div className="ideate">
                     <p>
-                        <b>IDEATE</b>
+                        <b>Ideate</b>
                     </p>
 
                     <br />
@@ -120,107 +122,39 @@ function Urudi() {
 
                 <div className='prototype'>
                     <p>
-                        <b>PROTOTYPE</b>
+                        <b>Prototype</b>
                     </p>
                     <br />
                     <br />
                     <div className="content">
-                        <div className="image">
-                            <figure>
-                                <img src={lowfidel} alt="low fidelity"  />
-                                <figcaption>Low Fidelity Voluum</figcaption>
-                            </figure>
+                        <div className='low-fid'>
+                            <p>I already had a picture in my head, so I drew out a mock-up of what I thought Voluum's landing page should look like. </p>
                             
+                            <div className="image">
+                                <figure>
+                                    <img src={lowfidel} alt="low fidelity"  />
+                                    <figcaption>Low Fidelity Voluum</figcaption>
+                                </figure>
+                                
+                            </div>
+                            <br />
+                            <p>The idea was to explain in simple terms, what Voluum is all about and then buttress our point with illustrations.</p>
+                            <p>After making the ‘top notch’ low-fidelity prototype, it was time to get high fidelity screens in people’s faces.</p>
                         </div>
-                        <br />
-                        <p>Regardless of how funny this prototype looks, the idea was to explain in simple terms, what Voluum is all about and then buttress our point with illustrations</p>
-                        <p>After making the ‘top notch’ low-fidelity prototype, it was time to get high fidelity screens in people’s faces.</p>
                         <br />
                         <div className="images">
-                            <div>
                                 <img src={lowfidelity} alt="low fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            {/* <div>
-                                <img src={darkabout} alt="fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div className='others'>
-                                <img src={darklogin} alt="low fidelity" />
-                                &nbsp;
-                                <img src={lowfide} alt="low fidelity" />    
-                            </div>
-                            &nbsp;
-                            
-                            <div>
-                                <img src={darksign} alt="fidelity" />    
-                            </div> */}
                             
                         </div>
-                        {/* <div className="images">
-                            <div>
-                                <img src={whitehome} alt="low fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div>
-                                <img src={whiteabout} alt="low fidelity" />    
-                            </div>
-
-                            &nbsp;
-
-                            <div className='others'>
-                                <img src={whitelogin} alt="low fidelity" />
-                                &nbsp;
-                                <img src={whitesignup} alt="low fidelity" />    
-                            </div>
-                            &nbsp;
-                            <div>
-                                <img src={whitesign} alt="fidelity" />    
-                            </div>
-                            
-                        </div> */}
-                        {/* <br />
-                        <p>
-                            I then put these screens in people’s faces, to get their criticisms/ recommendations.
-                            <br />
-                            The test audience gave lots of feedback, so I handpicked some of the reoccuring comments. 
-                            <br />
-                            Majority of the comments  were of the notion that Urudi should be all about the music. Most of them stated that seeing pictures of their favorite artistes was the best part of the page
-                        </p>
-
-                        <div className='critic-div'>
-                            <img src={critics} alt="critic" />
-                            <span>
-                                <img src={critic} alt="critic" />    
-                            </span>
-                            
-                        </div>
-
-                        <p>A re-design was inevitable, but this time I decided to use A/B testing</p>  */}
                     </div>
                 </div>
 
-                <div className="test">
-                        
-                    {/* <div className="images">
-                        <span>
-                            <img src={exhibitA} alt="exhibit A" />
-                        </span>
-
-                        <span>
-                            <img src={exhibitB} alt="exhibit B" />
-                        </span>
-                    </div> */}
-                    
+                <div className="test">   
                     <div className="content">
                         Feedback from people showed that they actually loved the design as it gave them a sense of what Voluum was all about
-                        
+                        <br />
+                        <br />
+                        Here's a preview of the Voluum design;
                     </div>
 
                     <div className="video">
@@ -289,9 +223,37 @@ function Urudi() {
                     <div></div>
 
                     <div className="socials">
-                        <img src={linkedin} alt="LinkedIn" />
-                        <img src={twitter} alt="twitter" />
-                        <img src={medium} alt="Medium" />
+                        <a 
+                            href="https://www.linkedin.com/in/donald-ugobude/"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={linkedin} alt="LinkedIn" />
+                        </a>
+                            
+                        <a 
+                            href="https://www.twitter.com/0d3ra"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={twitter} alt="twitter" />
+                        </a>
+
+                        <a 
+                            href="https://www.github.com/manlikedonald"
+                            target='_blank'
+                            rel='noreferrer' 
+                        >
+                            <img src={github} alt="Github" />    
+                        </a>
+
+                        <a 
+                            href="https://medium.com/@odera"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={medium} alt="Medium" />    
+                        </a>
                     </div>
 
                     <div></div>
