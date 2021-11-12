@@ -133,8 +133,6 @@ $buttonColor: #2a3b3b;
                 }
             }
         }
-        
-
         .second-page{
             // border: 1px solid #fff;
             margin: auto 50px;
@@ -232,43 +230,27 @@ $buttonColor: #2a3b3b;
                     }
                 }
                 .dev{
-                    margin: auto auto;
-                    display: flex;
-                    // justify-content: space-between;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
                     .urudi-dev{
-                        padding-right: 4.5rem;
+                        padding: 1rem;
                         h2{
                             font-size: $h3Font;
                             padding-top: 1rem;
-                        }
-                        img{
-                            position: relative;
-                            top: 3px;
-                            // left: 5px;
                         }
                     }
                     .coincrow{
-                        padding-right: 4.5rem;
+                        padding: 1rem;
                         h2{
                             font-size: $h3Font;
                             padding-top: 1rem;
-                        }
-                        img{
-                            position: relative;
-                            top: 3px;
-                            // left: 5px;
                         }
                     }
                     .swipe{
-                        padding-right: 4.5rem;
+                        padding: 1rem;
                         h2{
                             font-size: $h3Font;
                             padding-top: 1rem;
-                        }
-                        img{
-                            position: relative;
-                            top: 3px;
-                            // left: 5px;
                         }
                     }
                 }
@@ -640,7 +622,7 @@ $buttonColor: #2a3b3b;
                 
         }
         body{
-            margin: auto 50px;
+            margin: auto 35px;
             .first-page{
                 margin: auto auto;
                 height: 90vh;
@@ -690,7 +672,7 @@ $buttonColor: #2a3b3b;
                 animation-fill-mode: none;
                 animation-play-state: running;
                 cursor: zoom-out;
-                height: 90vh;
+                height: 95vh;
                 @keyframes der {
                     from {margin-top: 40rem;}
                     to {margin-top: 5rem;}
@@ -803,6 +785,8 @@ $buttonColor: #2a3b3b;
                         .urudi-dev{
                             width: 100%;
                             padding-bottom: 5rem;
+                            position: relative;
+                            right: 1rem;
                             h2{
                                 font-size: 36px;
                                 padding-top: 1rem;
@@ -810,7 +794,7 @@ $buttonColor: #2a3b3b;
                             img{
                                 position: relative;
                                 top: 3px;
-                                left: 5px;
+                                left: 0px;
                                 width: 100%;
                             }
                         }
@@ -818,6 +802,8 @@ $buttonColor: #2a3b3b;
                             width: 100%;
                             padding-bottom: 5rem;
                             margin: auto auto;
+                            position: relative;
+                            right: 1rem;
                             h2{
                                 font-size: 36px;
                                 padding-top: 1rem;
@@ -825,12 +811,14 @@ $buttonColor: #2a3b3b;
                             img{
                                 position: relative;
                                 top: 3px;
-                                left: 5px;
+                                left: 0px;
                                 width: 100%;
                             }
                         }
                         .swipe{
                             width: 100%;
+                            position: relative;
+                            right: 1rem;
                             h2{
                                 font-size: 36px;
                                 padding-top: 1rem;
@@ -838,7 +826,7 @@ $buttonColor: #2a3b3b;
                             img{
                                 position: relative;
                                 top: 3px;
-                                left: 5px;
+                                left: 0px;
                                 width: 100%;
                             }
                         }
@@ -1021,7 +1009,7 @@ $buttonColor: #2a3b3b;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 90vh;
+                height: 95vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1097,11 +1085,15 @@ $buttonColor: #2a3b3b;
                     justify-content: center;
                     padding: 2rem 0 4rem 0;
                     height: 100%;
+                    display: none;
                     img{
                         margin-right: 2rem;
                         margin-top: 3rem;
                         width: 100%;
                     }
+                }
+                .omolomo{
+                    margin-top: 5rem;
                 }
             }
             .engage-test{

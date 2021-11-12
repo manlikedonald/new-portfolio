@@ -164,7 +164,7 @@ function Urudi() {
                             <img src={critic} alt="critics" />
                         </div>
 
-                        <p>A re-design was inevitable, but this time I decided to use A/B testing. I designed two landing pages based on the input received from the test subjects, I then asked them to make a choice </p> 
+                        <p className='omolomo'>A re-design was inevitable, but this time I decided to use A/B testing. I designed two landing pages based on the input received from the test subjects, I then asked them to make a choice </p> 
                     </div>
                 </div>
 
