@@ -2,16 +2,13 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import arrow from '../assets/bi_arrow-right.svg'
 // import lowfidel from '../assets/lowfidelityvoluum.png'
-import lowfidelity from '../assets/engagehome.png'
-import about from '../assets/engageabout.png'
-import login from '../assets/engagelogin.png'
-import signup from '../assets/engagesignup.png'
-import help from '../assets/engagextra.png'
+import {ReactComponent as Engage} from '../assets/old-engage.svg'
 import {Link} from 'react-router-dom'
 import video from '../assets/Screen Recording 2021-11-03 at 09.44.57.mov'
 import donald from '../assets/Ellipse 2.svg'
 import linkedin from '../assets/bx_bxl-linkedin.svg'
 import twitter from '../assets/ant-design_twitter-outlined.svg'
+import github from '../assets/github.svg'
 import medium from '../assets/akar-icons_medium-fill.svg'
 
 function Urudi() {
@@ -135,36 +132,14 @@ function Urudi() {
                         <p>Products centered around finance have to clear, unambiguous because one unclear sentence can make you lose a prospect</p>
                         <p>Seeing that this product was made for SMBs, I created some wireframes and put these screens in the faces of business-oriented people, traders and employees in the fintech space.</p>
                         <br />
-                        <div className="images">
-                            <div>
-                                <img src={lowfidelity} alt="low fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div>
-                                <img src={about} alt="fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div className='others'>
-                                <img src={login} alt="low fidelity" />
-                                &nbsp;
-                                <img src={signup} alt="low fidelity" />    
-                            </div>
-                            &nbsp;
-                            
-                            <div>
-                                <img src={help} alt="fidelity" />    
-                            </div>
-                            
+                        <div className="images engage-img">
+                            <Engage />
                         </div>
                         
                     </div>
                 </div>
 
-                <div className="test">
+                <div className="test engage-test">
                     <div className="content">
                         <p className='omo'>
                             Feedback from people showed that they actually loved the design as it gave them a sense of what Engage was all about
@@ -240,9 +215,37 @@ function Urudi() {
                     <div></div>
 
                     <div className="socials">
-                        <img src={linkedin} alt="LinkedIn" />
-                        <img src={twitter} alt="twitter" />
-                        <img src={medium} alt="Medium" />
+                        <a 
+                            href="https://www.linkedin.com/in/donald-ugobude/"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={linkedin} alt="LinkedIn" />
+                        </a>
+                            
+                        <a 
+                            href="https://www.twitter.com/0d3ra"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={twitter} alt="twitter" />
+                        </a>
+
+                        <a 
+                            href="https://www.github.com/manlikedonald"
+                            target='_blank'
+                            rel='noreferrer' 
+                        >
+                            <img src={github} alt="Github" />    
+                        </a>
+
+                        <a 
+                            href="https://medium.com/@odera"
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <img src={medium} alt="Medium" />    
+                        </a>
                     </div>
 
                     <div></div>

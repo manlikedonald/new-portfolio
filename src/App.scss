@@ -232,40 +232,43 @@ $buttonColor: #2a3b3b;
                     }
                 }
                 .dev{
-                    margin: 5rem auto;
+                    margin: auto auto;
                     display: flex;
+                    // justify-content: space-between;
                     .urudi-dev{
-                        width: 33.33%;
-                        h2, p{
-                            padding: 0 5rem 0 0;
+                        padding-right: 4.5rem;
+                        h2{
+                            font-size: $h3Font;
+                            padding-top: 1rem;
                         }
                         img{
                             position: relative;
                             top: 3px;
-                            left: 5px;
+                            // left: 5px;
                         }
                     }
                     .coincrow{
-                        width: 33.33%;
-                        margin: auto 1rem;
-                        h2, p{
-                            padding: 0 5rem 0 0;
+                        padding-right: 4.5rem;
+                        h2{
+                            font-size: $h3Font;
+                            padding-top: 1rem;
                         }
                         img{
                             position: relative;
                             top: 3px;
-                            left: 5px;
+                            // left: 5px;
                         }
                     }
                     .swipe{
-                        width: 33.33%;
-                        h2, p{
-                            padding: 0 5rem 0 0;
+                        padding-right: 4.5rem;
+                        h2{
+                            font-size: $h3Font;
+                            padding-top: 1rem;
                         }
                         img{
                             position: relative;
                             top: 3px;
-                            left: 5px;
+                            // left: 5px;
                         }
                     }
                 }
@@ -478,18 +481,19 @@ $buttonColor: #2a3b3b;
         .prototype{
             padding: 4rem 0 4rem 0;
             .low-fid{
-                height: 100vh;
+                // height: 100vh;
                 padding: 0 0 4rem 0;
                 p{
                     font-size: $h3Font;
                 }
             }
             .image{
-                // background: url('./assets/double-bubble-dark.png');
-                padding: 3rem 0rem 3rem 0rem;
+                background: #000;
+                padding: 3rem 2rem 3rem 2rem;
                 justify-content: center;
                 display: flex;
                 height: auto;
+                margin: 5rem auto;
                 img{
                     width: 400px;
                 }
@@ -499,13 +503,17 @@ $buttonColor: #2a3b3b;
             }
             .images{
                 // background: #000;
-                padding: 3rem 0rem 3rem 0rem;
+                padding: 3rem 0rem 0rem 0rem;
                 justify-content: center;
                 display: flex;
-                height: 100vh;
+                width: 100%;
                 .others{
                     display: flex;
                     flex-direction: column;
+                }
+                .voluum-ex{
+                    background: #000;
+                    padding: 1rem 5rem 1rem 5rem;
                 }
             }
             .critic-div{
@@ -521,7 +529,7 @@ $buttonColor: #2a3b3b;
 
         .test{
             .omo{
-                padding: 20rem 0 0rem 0;
+                margin-top: -5rem;
             }
             .images{
                 justify-content: center;
@@ -793,13 +801,11 @@ $buttonColor: #2a3b3b;
                         display: flex;
                         flex-direction: column;
                         .urudi-dev{
-                            width: auto;
+                            width: 100%;
                             padding-bottom: 5rem;
                             h2{
                                 font-size: 36px;
-                            }
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                                padding-top: 1rem;
                             }
                             img{
                                 position: relative;
@@ -809,14 +815,12 @@ $buttonColor: #2a3b3b;
                             }
                         }
                         .coincrow{
-                            width: auto;
+                            width: 100%;
                             padding-bottom: 5rem;
                             margin: auto auto;
                             h2{
                                 font-size: 36px;
-                            }
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                                padding-top: 1rem;
                             }
                             img{
                                 position: relative;
@@ -826,12 +830,10 @@ $buttonColor: #2a3b3b;
                             }
                         }
                         .swipe{
-                            width: auto;
+                            width: 100%;
                             h2{
                                 font-size: 36px;
-                            }
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                                padding-top: 1rem;
                             }
                             img{
                                 position: relative;
@@ -849,7 +851,7 @@ $buttonColor: #2a3b3b;
                 // justify-content: space-between;
                 margin: 13rem auto;
                 padding: 1rem 0 1rem 00;
-                height: 50vh;
+                height: 40vh;
                 @keyframes dera {
                     from {color: #F0F0F0;}
                     to{ color: #4a6666;}
@@ -898,13 +900,12 @@ $buttonColor: #2a3b3b;
         }
         footer{
             margin: auto 20px;
-            height: 100%;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
                     // display: flex;
-                    padding: 0 2rem 1rem 0;
+                    padding: 0 2.5rem 1rem 0;
                     img{
                         width: 50px;
                     }
@@ -918,10 +919,9 @@ $buttonColor: #2a3b3b;
                     }
                 }
                 .socials{
-                    position: relative;
-                    // top: -2rem;
-                    // left: 2rem;
+                    top: 0rem;
                     display: flex;
+                    margin-top: 1rem;
                     // display: none;
                     img{
                         margin-right: 3rem;
@@ -1021,6 +1021,7 @@ $buttonColor: #2a3b3b;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                height: 90vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1072,12 +1073,10 @@ $buttonColor: #2a3b3b;
                     }
                 }
                 .images{
-                    // background: #000;
-                    padding: 3rem 0rem 3rem 0rem;
+                    // margin-top: -25rem;
+                    padding: 3rem 0rem 0rem 0rem;
                     justify-content: center;
                     display: flex;
-                    flex-direction: column;
-                    height: 100%;
                     .others{
                         display: flex;
                         flex-direction: column;
@@ -1086,11 +1085,17 @@ $buttonColor: #2a3b3b;
                         width: 100%;
                     }
                 }
+                .urudi-img, .engage-img{
+                    margin-top: -25rem;
+                }
+                .added-for-correction{
+                    margin-top: -23rem;
+                }
                 .critic-div{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    padding: 4rem 0 4rem 0;
+                    padding: 2rem 0 4rem 0;
                     height: 100%;
                     img{
                         margin-right: 2rem;
@@ -1099,9 +1104,17 @@ $buttonColor: #2a3b3b;
                     }
                 }
             }
+            .engage-test{
+                margin-top: -24rem;
+            }
     
             .test{
-                padding-top: 4rem;
+                // margin-top: -3rem;
+                .omo{
+                    position: relative;
+                    top: 1rem;
+                    z-index: 2;
+                }
                 .images{
                     justify-content: center;
                     display: flex;
@@ -1119,9 +1132,6 @@ $buttonColor: #2a3b3b;
                     padding: 4rem 0 4rem 0;
                 }
                 .video{
-                    display: flex;
-                    justify-content: center;
-                    height: 100%;
                     video{
                         // margin-top: 15rem;
                         width: 100%;
@@ -1146,13 +1156,12 @@ $buttonColor: #2a3b3b;
         }
         footer{
             margin: auto 20px;
-            height: 20vh;
             .content{ 
                 display: flex;
                 justify-content: space-between;
                 .donald{
                     // display: flex;
-                    padding: 0 2rem 1rem 0;
+                    padding: 0 2.5rem 1rem 0;
                     img{
                         width: 50px;
                     }
@@ -1166,10 +1175,9 @@ $buttonColor: #2a3b3b;
                     }
                 }
                 .socials{
-                    position: relative;
-                    // top: -2rem;
-                    // left: 2rem;
+                    top: 0rem;
                     display: flex;
+                    margin-top: 1rem;
                     // display: none;
                     img{
                         margin-right: 3rem;
@@ -1380,8 +1388,8 @@ $buttonColor: #2a3b3b;
                             width: auto;
                             padding-bottom: 2rem;
                             
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                            h2{
+                                padding-top: 1rem;
                             }
                             img{
                                 position: relative;
@@ -1394,8 +1402,8 @@ $buttonColor: #2a3b3b;
                             width: auto;
                             padding-bottom: 2rem;
                             margin: 5rem auto;
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                            h2{
+                                padding-top: 1rem;
                             }
                             img{
                                 position: relative;
@@ -1406,8 +1414,8 @@ $buttonColor: #2a3b3b;
                         }
                         .swipe{
                             width: auto;
-                            h2, p{
-                                padding: 0 0rem 0 0;
+                            h2{
+                                padding-top: 1rem;
                             }
                             img{
                                 position: relative;
@@ -1421,7 +1429,7 @@ $buttonColor: #2a3b3b;
             }
             .lets-work{
                 padding-top: 20rem;
-                height: 60vh;
+                height: 50vh;
                 text-align: center;
                 @keyframes dera {
                     from {color: #F0F0F0;}
@@ -1485,10 +1493,8 @@ $buttonColor: #2a3b3b;
                 }
                 .socials{
                     position: relative;
-                    // top: -2rem;
-                    // left: 2rem;
+                    top: 0rem;
                     display: flex;
-                    // display: none;
                     img{
                         margin-right: 3rem;
                         width: 40px;
@@ -1643,8 +1649,8 @@ $buttonColor: #2a3b3b;
                     padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
-                    flex-direction: column;
-                    height: 100%;
+                    // flex-direction: column;
+                    // height: 100%;
                     .others{
                         display: flex;
                         flex-direction: column;
@@ -1652,6 +1658,12 @@ $buttonColor: #2a3b3b;
                     img{
                         width: 100%;
                     }
+                }
+                .urudi-img, .engage-img{
+                    margin-top: -15rem;
+                }
+                .added-for-correction{
+                    margin-top: -15rem;
                 }
                 .critic-div{
                     display: flex;
@@ -1666,9 +1678,17 @@ $buttonColor: #2a3b3b;
                     }
                 }
             }
+            .engage-test{
+                margin-top: -14rem;
+            }
     
             .test{
-                padding-top: 5rem;
+                padding-top: 0rem;
+                .omo{
+                    position: relative;
+                    top: 1rem;
+                    z-index: 2;
+                }
                 .images{
                     justify-content: center;
                     display: flex;
@@ -1733,7 +1753,8 @@ $buttonColor: #2a3b3b;
                 }
                 .socials{
                     position: relative;
-                    // top: -2rem;
+                    top: 0rem;
+                    margin-top: 1rem;
                     // left: 2rem;
                     display: flex;
                     // display: none;
@@ -2211,7 +2232,7 @@ $buttonColor: #2a3b3b;
                     padding: 3rem 0rem 3rem 0rem;
                     justify-content: center;
                     display: flex;
-                    flex-direction: column;
+                    // flex-direction: column;
                     height: 100%;
                     .others{
                         display: flex;

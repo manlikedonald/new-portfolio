@@ -143,18 +143,19 @@ function Urudi() {
                         </div>
                         <br />
                         <div className="images">
-                                <img src={lowfidelity} alt="low fidelity" />    
-                            
+                            <img src={lowfidelity} alt="low fidelity" className='voluum-ex'/>    
                         </div>
                     </div>
                 </div>
 
                 <div className="test">   
                     <div className="content">
-                        Feedback from people showed that they actually loved the design as it gave them a sense of what Voluum was all about
-                        <br />
-                        <br />
-                        Here's a preview of the Voluum design;
+                        <p className='omo'>
+                            Feedback from people showed that they actually loved the design as it gave them a sense of what Engage was all about
+                            <br />
+                            <br />
+                            Here's a preview of the Voluum design;
+                        </p> 
                     </div>
 
                     <div className="video">

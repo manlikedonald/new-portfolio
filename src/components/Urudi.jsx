@@ -2,19 +2,11 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import arrow from '../assets/bi_arrow-right.svg'
 import lowfidel from '../assets/lowfidel.png'
-import lowfidelity from '../assets/lowfidelity.png'
-import darklogin from '../assets/blacklogin.png'
-import darksign from '../assets/darksign.png'
-import lowfide from '../assets/lowfide.png'
+import {ReactComponent as DarkUrudi} from '../assets/black-urudi.svg'
 import {Link} from 'react-router-dom'
-import whitehome from '../assets/oldhome.png'
-import whitelogin from '../assets/oldlogin.png'
-import whitesignup from '../assets/oldsignup.png'
-import whitesign from '../assets/whitesign.png'
-import darkabout from '../assets/oldAbout.png'
-import whiteabout from '../assets/whiteabout.png'
-import critic from '../assets/critic.png'
-import critics from '../assets/critics.png'
+import critic from '../assets/critic.svg'
+// import critic from '../assets/critic.png'
+// import critics from '../assets/critics.png'
 import exhibitA from '../assets/exhibitA.png'
 import exhibitB from '../assets/exhibitB.png'
 import video from '../assets/Screen Recording 2021-10-29 at 09.57.32.mov'
@@ -155,57 +147,12 @@ function Urudi() {
                             <p>After making the ‘top notch’ low-fidelity prototype, it was time to get high fidelity screens in people’s faces.</p>
                         </div>
                         <br />
-                        <div className="images">
-                            <div>
-                                <img src={lowfidelity} alt="low fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div>
-                                <img src={darkabout} alt="fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div className='others'>
-                                <img src={darklogin} alt="low fidelity" />
-                                &nbsp;
-                                <img src={lowfide} alt="low fidelity" />    
-                            </div>
-                            &nbsp;
-                            
-                            <div>
-                                <img src={darksign} alt="fidelity" className='otu' />    
-                            </div>
-                            
-                        </div>
-                        <div className="images">
-                            <div>
-                                <img src={whitehome} alt="low fidelity" />    
-                            </div>
-                            
-                            &nbsp;
-
-                            <div>
-                                <img src={whiteabout} alt="low fidelity" />    
-                            </div>
-
-                            &nbsp;
-
-                            <div className='others'>
-                                <img src={whitelogin} alt="low fidelity" />
-                                &nbsp;
-                                <img src={whitesignup} alt="low fidelity" />    
-                            </div>
-                            &nbsp;
-                            <div>
-                                <img src={whitesign} alt="fidelity" className='otu' />    
-                            </div>
-                            
+                        <div className="images urudi-img">
+                            <DarkUrudi />
                         </div>
                         <br />
-                        <p>
+                        <br />
+                        <p className='added-for-correction'>
                             I then put these screens in people’s faces, to get their criticisms/ recommendations.
                             <br />
                             The test audience gave lots of feedback, majority were of the notion that Urudi should be all about the music. 
@@ -214,13 +161,7 @@ function Urudi() {
                         </p>
 
                         <div className='critic-div'>
-                            <img src={critics} alt="critic" />
-                            &nbsp;
-
-                            <span>
-                                <img src={critic} alt="critic" />    
-                            </span>
-                            
+                            <img src={critic} alt="critics" />
                         </div>
 
                         <p>A re-design was inevitable, but this time I decided to use A/B testing. I designed two landing pages based on the input received from the test subjects, I then asked them to make a choice </p> 
