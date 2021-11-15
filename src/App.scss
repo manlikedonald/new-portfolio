@@ -1,7 +1,7 @@
 $h1Font: 100px;
 $h2Font: 64px;
 $h3Font: 36px;
-$pcolor: #4E5154;
+$pcolor: #757575;
 $buttonColor: #2a3b3b;
 
 *{
@@ -77,9 +77,9 @@ $buttonColor: #2a3b3b;
         margin: auto 120px;
         .first-page{
             // border: 1px solid #fff;
-            margin: auto 50px;
-            padding-top: 10rem;
-            height: 70vh;
+            margin: 10rem 50px;
+            padding-bottom: 3rem;
+            // height: 70vh;
             animation-name: deta;
             animation-duration: 2.5s;
             animation-timing-function: ease-out;
@@ -91,8 +91,8 @@ $buttonColor: #2a3b3b;
             cursor: zoom-out;
 
             @keyframes deta {
-                from {margin-top: 10rem;}
-                to {margin-top: 0rem;}
+                from {margin-top: 30rem;}
+                to {margin-top: 10rem;}
 
                 from {opacity: 0;}
                 to {opacity: 1;}
@@ -124,7 +124,7 @@ $buttonColor: #2a3b3b;
             }
             p{
                 margin-bottom: 2rem;
-                color: #4E5154;
+                color: #757575;
             }
             .socials{
                 display: flex;
@@ -145,7 +145,8 @@ $buttonColor: #2a3b3b;
             animation-fill-mode: none;
             animation-play-state: running;
             cursor: zoom-out;
-            height: 80vh;
+            // height: 70vh;
+            padding-bottom: 13rem;
 
             @keyframes der {
                 from {margin-top: 50rem;}
@@ -158,7 +159,7 @@ $buttonColor: #2a3b3b;
             h2{
                 font-size: $h3Font;
                 font-weight: 100;
-                color: #4E5154;
+                color: #757575;
                 
             }
         }
@@ -257,8 +258,8 @@ $buttonColor: #2a3b3b;
             }
         }
         .lets-work{
-            padding-top: 20rem;
-            height: 60vh;
+            padding: 20rem 0 25rem 0;
+            // height: 60vh;
             text-align: center;
             @keyframes dera {
                 from {color: #F0F0F0;}
@@ -324,6 +325,7 @@ $buttonColor: #2a3b3b;
         }
         p{
             text-align: center;
+            color: $pcolor;
         }
     }
 }
@@ -410,10 +412,10 @@ $buttonColor: #2a3b3b;
             }
         }
         .define{
-            padding: 10rem 0 0 0;
+            padding: 10rem 0 15rem 0;
             display: flex;
             justify-content: space-between;
-            height: 80vh;
+            // height: 70vh;
             animation-name: depa;
             animation-duration: 2.5s;
             animation-timing-function: ease-out;
@@ -457,11 +459,10 @@ $buttonColor: #2a3b3b;
             }
         }
         .ideate{
-            padding: 4rem 0 4rem 0;
-            height: 78vh;
+            padding: 0rem 0 15rem 0;
         }
         .prototype{
-            padding: 4rem 0 4rem 0;
+            padding: 0rem 0 4rem 0;
             .low-fid{
                 // height: 100vh;
                 padding: 0 0 4rem 0;
@@ -575,6 +576,7 @@ $buttonColor: #2a3b3b;
         }
         p{
             text-align: center;
+            color: $pcolor;
         }
     }
 }
@@ -625,7 +627,8 @@ $buttonColor: #2a3b3b;
             margin: auto 35px;
             .first-page{
                 margin: auto auto;
-                height: 90vh;
+                padding-bottom: 0rem;
+                height: 80vh;
                 padding-top: 7rem;
                 h1{
                     font-size: $h2Font;
@@ -672,7 +675,8 @@ $buttonColor: #2a3b3b;
                 animation-fill-mode: none;
                 animation-play-state: running;
                 cursor: zoom-out;
-                height: 95vh;
+                height: 75vh;
+                padding-bottom: 0rem;
                 @keyframes der {
                     from {margin-top: 40rem;}
                     to {margin-top: 5rem;}
@@ -704,7 +708,7 @@ $buttonColor: #2a3b3b;
                         margin: 10rem auto;
                     }
                     p{
-                        color: #5f5f5f;
+                        color: $pcolor;
                     }
                     h2{
                         font-size: 24px;
@@ -782,6 +786,7 @@ $buttonColor: #2a3b3b;
                         margin: auto auto;
                         display: flex;
                         flex-direction: column;
+                        max-width: 100%;
                         .urudi-dev{
                             width: 100%;
                             padding-bottom: 5rem;
@@ -838,8 +843,8 @@ $buttonColor: #2a3b3b;
                 flex-direction: column;
                 // justify-content: space-between;
                 margin: 13rem auto;
-                padding: 1rem 0 1rem 00;
-                height: 40vh;
+                padding: 1rem 0 5rem 00;
+                // height: 40vh;
                 @keyframes dera {
                     from {color: #F0F0F0;}
                     to{ color: #4a6666;}
@@ -1005,11 +1010,11 @@ $buttonColor: #2a3b3b;
                 }
             }
             .define{
-                padding: 4rem 0 0 0;
+                padding: 5rem 0 10rem 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 95vh;
+                // height: 80vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1037,8 +1042,7 @@ $buttonColor: #2a3b3b;
                 }
             }
             .ideate{
-                padding: 6rem 0 2rem 0;
-                height: 90vh;
+                padding: 0rem 0 10rem 0;
             }
             
             .prototype{
@@ -1227,8 +1231,9 @@ $buttonColor: #2a3b3b;
             margin: 5rem 120px;
             .first-page{
                 margin: auto auto;
-                padding-top: 5rem;
-                height: 90vh;
+                padding-top: 1rem;
+                padding-bottom: 0rem;
+                height: 70vh;
                 @keyframes don{
                     from {color: #F0F0F0;}
                     to {color: $buttonColor;}
@@ -1261,10 +1266,10 @@ $buttonColor: #2a3b3b;
                     }
                 }
             }
-            
-    
+
             .second-page{
                 margin: 5rem auto;
+                padding-bottom: 4rem;
                 animation-name: der;
                 animation-duration: 2.5s;
                 animation-timing-function: ease-out;
@@ -1274,7 +1279,7 @@ $buttonColor: #2a3b3b;
                 animation-fill-mode: none;
                 animation-play-state: running;
                 cursor: zoom-out;
-                height: 90vh;
+                height: 70vh;
                 @keyframes der {
                     from {margin-top: 40rem;}
                     to {margin-top: 5rem;}
@@ -1302,7 +1307,7 @@ $buttonColor: #2a3b3b;
                         display: none;
                     }
                     p{
-                        color: #757575;;
+                        color: $pcolor;
                     }
                     h2{
                         font-size: 24px;
@@ -1420,8 +1425,8 @@ $buttonColor: #2a3b3b;
                 }
             }
             .lets-work{
-                padding-top: 20rem;
-                height: 50vh;
+                padding: 20rem 0 20rem 0;
+                // height: 50vh;
                 text-align: center;
                 @keyframes dera {
                     from {color: #F0F0F0;}
@@ -1582,11 +1587,11 @@ $buttonColor: #2a3b3b;
                 }
             }
             .define{
-                padding: 4rem 0 0 0;
+                padding: 10rem 0 15rem 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 90vh;
+                // height: 90vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1614,7 +1619,7 @@ $buttonColor: #2a3b3b;
                 }
             }
             .ideate{
-                height: 90vh;
+                padding: 0rem 0 15rem 0;
             }
             
             .prototype{
@@ -1803,7 +1808,7 @@ $buttonColor: #2a3b3b;
             margin: 5rem 120px;
             .first-page{
                 margin: auto auto;
-                padding-top: 15rem;
+                padding: 15rem 0 13rem 0;
                 @keyframes don{
                     from {color: #F0F0F0;}
                     to {color: $buttonColor;}
@@ -1819,7 +1824,7 @@ $buttonColor: #2a3b3b;
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
                     animation-fill-mode: none;
-                    animation-play-state: running;    
+                    animation-play-state: running;   
                 }
                 h2{
                     font-size: $h2Font;
@@ -1883,10 +1888,11 @@ $buttonColor: #2a3b3b;
                         font-size: 24px;
                     }
                     .urudi{
+                        padding-top: 2rem;
                         display: flex;
                         // flex-direction: column;
                         div{
-                            padding: 2rem 2rem 0 0;
+                            padding: 1rem 2rem 0 0;
                             h2{
                                 font-size: $h3Font;
                             }
@@ -1957,6 +1963,7 @@ $buttonColor: #2a3b3b;
                             display: flex;
                             div{
                                 margin-left: 10rem;
+                                margin-top: -2rem;
                             }
                             img{
                                 position: relative;
@@ -1973,6 +1980,7 @@ $buttonColor: #2a3b3b;
                             display: flex;
                             div{
                                 margin-left: 12rem;
+                                margin-top: -2rem;
                             }
                             img{
                                 position: relative;
@@ -1988,6 +1996,7 @@ $buttonColor: #2a3b3b;
                             display: flex;
                             div{
                                 margin-left: 7rem;
+                                margin-top: -1rem;
                             }
                             img{
                                 position: relative;
@@ -2001,8 +2010,8 @@ $buttonColor: #2a3b3b;
                 }
             }
             .lets-work{
-                padding-top: 20rem;
-                height: 60vh;
+                // padding-top: 20rem;
+                // height: 60vh;
                 text-align: center;
                 @keyframes dera {
                     from {color: #F0F0F0;}
@@ -2165,11 +2174,11 @@ $buttonColor: #2a3b3b;
                 }
             }
             .define{
-                padding: 15rem 0 0 0;
+                padding: 10rem 0 15rem 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 90vh;
+                // height: 90vh;
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -2196,9 +2205,9 @@ $buttonColor: #2a3b3b;
                     }
                 }
             }
-            .ideate{
-                height: 80vh;
-            }
+            // .ideate{
+                
+            // }
             
             .prototype{
                 .low-fid{
@@ -2234,6 +2243,9 @@ $buttonColor: #2a3b3b;
                         width: 100%;
                     }
                 }
+                .urudi-img, .engage-img{
+                    margin: -10rem auto;
+                }
                 .critic-div{
                     display: flex;
                     flex-direction: column;
@@ -2249,7 +2261,7 @@ $buttonColor: #2a3b3b;
             }
     
             .test{
-                padding-top: 5rem;
+                padding-top: 0rem;
                 .images{
                     justify-content: center;
                     display: flex;
@@ -2327,6 +2339,166 @@ $buttonColor: #2a3b3b;
             p{
                 padding: 3rem 0 0 0;
                 text-align: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width:1200px) and (max-width: 1500px){
+    .landing-page{
+        body{
+            .third-page{
+                .works{
+                    margin: 5rem 15px;
+                    .arrow{
+                        position: relative;
+                        top: 3px;
+                    }
+                    p{
+                        color: #757575;
+                    }
+                    .react-app{
+                        font-size: $h2Font;
+                        margin: 20rem auto;
+                    }
+                    .second-image{
+                        display: none;
+                    }
+                    .urudi{
+                        display: flex;
+                        div{
+                            padding: .5rem 5rem 0 0;
+                            h2{
+                                font-size: $h3Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .urudi-img{
+                            margin-right: 1.5rem;
+                        }
+                    }
+                    .voluum{
+                        display: flex;
+                        margin: 10rem auto;
+                        div{
+                            padding: 3rem 5rem 0 0;
+                            h2{
+                                font-size: $h3Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .voluum-img{
+                            margin-right: 1.5rem;
+                        }
+                    }
+                    .engage{
+                        display: flex;
+                        margin: 5rem auto;
+                        div{
+                            padding: 2.5rem 5rem 0 0;
+                            h2{
+                                font-size: $h3Font;
+                            }
+                            img{
+                                position: relative;
+                                top: 2px;
+                                left: 5px;
+                            }
+                        }
+                        .engage-img{
+                            margin-right: 1.5rem;
+                        }
+                    }
+                    .dev{
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        justify-content: center;
+                        .urudi-dev{
+                            padding: 1rem;
+                            h2{
+                                font-size: $h3Font;
+                                padding-top: 1rem;
+                            }
+                            img{
+                                width: 20rem;
+                                height: 15rem;
+                            }
+                        }
+                        .coincrow{
+                            padding: 1rem;
+                            h2{
+                                font-size: $h3Font;
+                                padding-top: 1rem;
+                            }
+                            img{
+                                width: 20rem;
+                                height: 15rem;
+                            }
+                        }
+                        .swipe{
+                            padding: 1rem;
+                            h2{
+                                font-size: $h3Font;
+                                padding-top: 1rem;
+                            }
+                            img{
+                                width: 20rem;
+                                height: 15rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .lets-work{
+                padding: 15rem 0 20rem 0;
+                // height: 60vh;
+                text-align: center;
+                @keyframes dera {
+                    from {color: #F0F0F0;}
+                    to{ color: #4a6666;}
+                }
+    
+                h1{
+                    font-size: $h1Font;
+                    color: #F0F0F0;
+                    animation-name: dera;
+                    animation-duration: 2.5s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                }
+                .buttons{
+                    position: relative;
+                    top: 1rem;
+                    .email{
+                        margin: auto 1rem;
+                        background: #2a3b3b;
+                        border: none;
+                        font-weight: 600;
+                    }
+                    .email:hover{
+                        background: #020A13;
+                        border: 1px solid #2a3b3b;
+                    }
+                    .resume{
+                        border: 1px solid #2a3b3b;
+                        background: #020A13;
+                    }
+                    .resume:hover{
+                        background: #2a3b3b;
+                    }
+                }
             }
         }
     }

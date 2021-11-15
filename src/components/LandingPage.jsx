@@ -17,6 +17,8 @@ import donald from '../assets/Ellipse 2.svg'
 import {Link} from 'react-router-dom'
 import {ReactComponent as Arrow} from '../assets/bi_arrow-right.svg'
 
+
+
 function LandingPage() {
     return (
         <div className='landing-page'>
@@ -129,7 +131,7 @@ function LandingPage() {
                 
                 <section className='third-page'>
                     <p>
-                        <b>Works</b>
+                        <b>Projects</b>
                     </p>
 
                     <hr />
@@ -258,7 +260,7 @@ function LandingPage() {
                             
                         </div>
 
-                        <h2 className='react-app'>I also build React applications when I’m less busy.</h2>
+                        <h2 className='react-app'>I also build React applications.</h2>
 
                         <div className="dev">
                             <div className="urudi-dev">
