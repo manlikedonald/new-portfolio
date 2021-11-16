@@ -81,7 +81,7 @@ $buttonColor: #2a3b3b;
             padding-bottom: 3rem;
             // height: 70vh;
             animation-name: deta;
-            animation-duration: 2.5s;
+            animation-duration: 2s;
             animation-timing-function: ease-out;
             animation-delay: 0s;
             animation-iteration-count: 1;
@@ -91,8 +91,8 @@ $buttonColor: #2a3b3b;
             cursor: zoom-out;
 
             @keyframes deta {
-                from {margin-top: 30rem;}
-                to {margin-top: 10rem;}
+                from {margin: 30rem 50px;}
+                to {margin: 10rem 50px;}
 
                 from {opacity: 0;}
                 to {opacity: 1;}
@@ -176,6 +176,7 @@ $buttonColor: #2a3b3b;
                 .react-app{
                     font-size: $h2Font;
                     margin: 20rem auto;
+                    text-align: center;
                 }
                 .urudi{
                     display: flex;
@@ -427,8 +428,8 @@ $buttonColor: #2a3b3b;
             cursor: zoom-out;
 
             @keyframes depa {
-                from {margin-top: 10rem;}
-                to {margin-top: 0rem;}
+                from {padding: 30rem 0 15rem 0;;}
+                to {padding: 10rem 0 15rem 0;;}
 
                 from {opacity: 0;}
                 to {opacity: 1;}
@@ -627,9 +628,14 @@ $buttonColor: #2a3b3b;
             margin: auto 35px;
             .first-page{
                 margin: auto auto;
-                padding-bottom: 0rem;
-                height: 80vh;
                 padding-top: 7rem;
+                @keyframes deta {
+                    from {padding-top: 20rem;}
+                    to {padding-top: 7rem;}
+
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
                 h1{
                     font-size: $h2Font;
                     text-shadow: 23px -1px 6px #353636;
@@ -675,8 +681,8 @@ $buttonColor: #2a3b3b;
                 animation-fill-mode: none;
                 animation-play-state: running;
                 cursor: zoom-out;
-                height: 75vh;
-                padding-bottom: 0rem;
+                // height: 75vh;
+                padding-bottom: 4rem;
                 @keyframes der {
                     from {margin-top: 40rem;}
                     to {margin-top: 5rem;}
@@ -842,7 +848,7 @@ $buttonColor: #2a3b3b;
                 display: flex;
                 flex-direction: column;
                 // justify-content: space-between;
-                margin: 13rem auto;
+                margin: 6rem auto;
                 padding: 1rem 0 5rem 00;
                 // height: 40vh;
                 @keyframes dera {
@@ -1015,6 +1021,13 @@ $buttonColor: #2a3b3b;
                 flex-direction: column;
                 justify-content: space-between;
                 // height: 80vh;
+                @keyframes depa {
+                    from {padding: 15rem 0 10rem 0;;}
+                    to {padding: 5rem 0 10rem 0;;}
+    
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1234,6 +1247,13 @@ $buttonColor: #2a3b3b;
                 padding-top: 1rem;
                 padding-bottom: 0rem;
                 height: 70vh;
+                @keyframes deta {
+                    from {padding-top: 10rem;}
+                    to {padding-top: 1rem;}
+
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
                 @keyframes don{
                     from {color: #F0F0F0;}
                     to {color: $buttonColor;}
@@ -1592,6 +1612,13 @@ $buttonColor: #2a3b3b;
                 flex-direction: column;
                 justify-content: space-between;
                 // height: 90vh;
+                @keyframes depa {
+                    from {padding: 30rem 0 15rem 0;}
+                    to {padding: 10rem 0 15rem 0;}
+    
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -1809,6 +1836,14 @@ $buttonColor: #2a3b3b;
             .first-page{
                 margin: auto auto;
                 padding: 15rem 0 13rem 0;
+
+                @keyframes deta {
+                    from {padding: 30rem 0 13rem 0;}
+                    to {padding: 15rem 0 13rem 0;}
+
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
                 @keyframes don{
                     from {color: #F0F0F0;}
                     to {color: $buttonColor;}
@@ -1819,7 +1854,7 @@ $buttonColor: #2a3b3b;
                     text-shadow: 23px -1px 6px #353636;
                     animation-name: don;
                     animation-duration: 2s;
-                    animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-out;
                     animation-delay: 0s;
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
@@ -2179,6 +2214,13 @@ $buttonColor: #2a3b3b;
                 flex-direction: column;
                 justify-content: space-between;
                 // height: 90vh;
+                @keyframes depa {
+                    from {padding: 30rem 0 15rem 0;;}
+                    to {padding: 10rem 0 15rem 0;;}
+    
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
                 .text{
                     padding: 0 1rem 0 0;
                 }
@@ -2498,6 +2540,32 @@ $buttonColor: #2a3b3b;
                     .resume:hover{
                         background: #2a3b3b;
                     }
+                }
+            }
+        }
+    }
+    .urudi-page, .voluum-page{
+        .define{
+            .design-process{
+                display: none;
+                width: 40%;
+                text-align: right;
+                .head{
+                    font-size: 18px;
+                }
+                .numbers{
+                    background: #2a3b3b;
+                    padding: 0 3rem 0 1rem;
+                }
+                p{
+                    font-weight: 600;
+                    font-size: 29px;
+                    margin-bottom: 1rem;
+                }
+                hr{
+                    float: right;
+                    position: relative;
+                    top: -1rem;                    
                 }
             }
         }
