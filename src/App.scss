@@ -36,6 +36,93 @@ $buttonColor: #2a3b3b;
 
 .landing-page{
     background: #020A13;
+    // .load-container {
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100vh;
+    //     overflow: hidden;
+    //     z-index: 10;
+    //     pointer-events: none;
+    //   }
+      
+    // .load-screen {
+    //     position: relative;
+    //     padding-top: 0px;
+    //     padding-left: 0px;
+    //     padding-right: 0px;
+    //     background-color: #19bc8b;
+    //     width: 0%;
+    //     height: 100%;
+        
+    // }
+      
+    // .load-screen1 {
+    //     position: relative;
+    //     padding-top: 15rem;
+    //     padding-left: 0px;
+    //     padding-right: 0px;
+    //     background: url('./assets/dark-space-minimal.jpeg');
+    //     width: 100%;
+    //     height: 0%;
+    //     display: flex;
+    //     align-items: center;
+    //     // justify-content: center;
+    //     flex-direction: column;
+    //     box-sizing:border-box;
+    //     text-rendering:optimizeLegibility;
+    //     -webkit-font-smoothing:antialiased;
+    //     h1{
+    //         font-size: $h1Font;
+    //         // opacity: 0.2;
+    //         font-family: 'Plastic Love', sans-serif;
+    //     }
+    //     p{
+    //         font-size: $h2Font;
+    //     }
+    //     h1, p{
+    //         color: $buttonColor;
+    //         animation-name: dan;
+    //         animation-duration: 3s;
+    //         animation-timing-function: ease-in-out;
+    //         animation-delay: 0;
+    //         animation-iteration-count: 1;
+    //         animation-direction: normal;
+    //         animation-fill-mode: none;
+    //         animation-play-state: running;
+    //         cursor: zoom-out;
+    //     }
+        
+    //     @keyframes dan {
+    //         from {opacity: 0.1;}
+    //         to {opacity: 1;}
+           
+    //     }
+    //     .earth{
+    //         // margin: 10rem 50px;
+    //         // padding-bottom: 3rem;
+    //         // height: 70vh;
+    //         animation-name: deza;
+    //         animation-duration: 2s;
+    //         animation-timing-function: ease-in-out;
+    //         animation-delay: 0;
+    //         animation-iteration-count: 1;
+    //         animation-direction: normal;
+    //         animation-fill-mode: none;
+    //         animation-play-state: running;
+    //         cursor: zoom-out;
+    //     }
+    //     @keyframes deza {
+    //         from {margin: 20rem auto;}
+    //         to {margin: 0rem auto;}
+    //     }
+    // }
+      
+    //   .Headd {
+    //     opacity: 0;
+    //     pointer-events: none;
+    //   }
     nav{
         padding: 1rem 120px .5rem 120px;
         border: none;
@@ -589,6 +676,60 @@ $buttonColor: #2a3b3b;
     .landing-page{
         background: #020A13;
         padding: 0 0 1rem 0;
+        .load-screen1 {
+            position: relative;
+            padding-top: 5rem;
+            padding-left: 10rem;
+            padding-right: 0px;
+            background: url('./assets/dark-space-minimal.jpeg');
+            width: 100%;
+            height: 0%;
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            flex-direction: column;
+            h1{
+                font-size: $h2Font;
+                opacity: .1;
+            }
+            p{
+                font-size: 24px;
+            }
+            h1, p{
+                animation-name: dan;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                cursor: zoom-out;
+            }
+            @keyframes dan {
+                from {padding-right: 150rem;}
+                to {padding-right: 0rem;}
+               
+            }
+            .earth{
+                // margin: 10rem 50px;
+                // padding-bottom: 3rem;
+                // height: 70vh;
+                animation-name: deza;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                cursor: zoom-out;
+            }
+            @keyframes deza {
+                from {margin: 30rem auto;}
+                to {margin: 0rem auto;}
+            }
+        }
         nav{
             padding: 0 20px 0rem 20px;
             border: none;
